@@ -1,36 +1,75 @@
 ---
 layout: week
 visible: true
-icon: undraw_going_up_ttm5.svg
+icon: undraw_programmer_imem.svg
 notitle: true
 examples:
-  - filename: inClass_week10.ipynb
+  - filename: inClass_week11.ipynb
     type: ipynb
-    title: In Class Notebook, Week 10
-    description: In Class Notebook
-  - filename: prep_notebook_week10.ipynb
+    title: In class notebook, Week 11
+    description: In class notebook
+  - filename: prep_notebook_week11.ipynb
     type: ipynb
-    title: Prep Notebook, Week 10
-    description: Prep notebook for this week
-  - filename: prep_notebook_week10_extras.ipynb
-    type: ipynb
-    title: Extra prep Notebook, Week 10
-    description: Prep notebook for geospatial Corgi data
+    title: Prep notebook, Week 11
+    description: In class notebook
+  - filename: prepJekyll
+    type: iodide
+    title: Prep Jekyll Files, Week 11
+    description: In class notebook
+    link: https://github.com/UIUC-iSchool-DataViz/is445_obuobg_spring2026/tree/main/week11/prepJekyll
+  - filename: inClassJekyll
+    type: iodide
+    title: In class Jekyll Files, Week 11
+    description: Updating storage of Jekyll files in class
+    link: https://github.com/UIUC-iSchool-DataViz/is445_obuobg_spring2026/tree/main/week11/inClassJekyll
+  - filename: prep_script_week10.py
+    type: py
+    title: Prep script file, Week 11
+    description: In class notebook
+  - filename: inClass_script_week10.py
+    type: py
+    title: In class script file, Week 11
+    description: In class notebook
+  - filename: prep_notebook_week09_fall2022
+    type: iodidePast
+    title: Prep Starboard Notebook, Fall 2023
+    description: Prep Starboard Notebook
+    link: https://starboard.gg/nb/n9nb6N8
+  - filename: prep_notebook_week10_fall2022
+    type: iodidePast
+    title: Extra Starboard Fall 2023 - Dashboarding
+    description: Prep Starboard Notebook
+    link: https://starboard.gg/nb/nuXwr0l
+  - filename: prep_notebook_week11
+    type: iodidePast
+    title: Previous class notebook
+    description: Prep Iodide Notebook, Spring 2020
+    link: https://alpha.iodide.io/notebooks/4399/
+  - filename: prep_notebook_week10_fall2021
+    type: iodidePast
+    title: Previous class notebook
+    description: Prep Starboard Notebook, Fall 2021
+    link: https://starboard.gg/nb/nXvyanN
 data:
-  - filename: building_inventory.csv
+  - filename: mobility.csv
     type: dataLink
-    title: Buildings dataset
-    description: Illinois buildings dataset
-    link: https://github.com/UIUC-iSchool-DataViz/is445_data/raw/main/building_inventory.csv
-  - filename: corgs_per_country_over_time_columns_2020.csv
-    type: dataLink
-    title: Corgis per country over time 
-    description: This dataset is from the <a href="http://cardiped.net/">Cardigan Archives</a> and <a href="https://github.com/UIUC-iSchool-DataViz/spring2020/blob/master/week12/corg/grabCorgData_subpages.py">scraped using Beautiful Soup in Python</a> and <a href="https://github.com/UIUC-iSchool-DataViz/spring2020/blob/master/week12/corg/calc_corgData.ipynb">further processed in Python</a> into this form.
-    link: https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_data/main/corgs_per_country_over_time_columns_2020.csv
+    title: The Mobility dataset (online)
+    description: A dataset of USA "mobility" which (I <b>think</b> comes from a <a href="https://www.census.gov/library/working-papers/2018/adrm/CES-WP-18-40R.html">a large census study from 1989-2015</a>) and is collected in several places <a href="http://www.stat.cmu.edu/~cshalizi/uADA/15/hw/01/mobility.csv">including right here</a>.  Here "mobility" is refering to how easy it is for a person to move up in economic status (<a href="http://www.stat.cmu.edu/~cshalizi/uADA/15/hw/01/hw-01.pdf">more info can be found here</a>) based on factors like parental income, location, race, etc.
+    link: https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_data/main/mobility.csv
 ---
 
-# More with Altair & Intro to Jekyll
+# Considering your audience; Jekyll Web Dev & Streamlit
+
+Starting to develop Streamlit apps for hosting on HuggingFace.
+
+Viz for self/peers/public.
+
 
 ## Optional reading list
 
-1. <a href="https://altair-viz.github.io/gallery/index.html">Altair Docs</a> - in particular <a href="https://altair-viz.github.io/user_guide/data.html#including-index-data">Including Indexes</a>, <a href="https://altair-viz.github.io/altair-tutorial/notebooks/06-Selections.html">Interactivity & Selections</a>, <a href="https://altair-viz.github.io/gallery/multiline_tooltip.html#multi-line-tooltip">Multi-line tooltips</a>, <a href="https://altair-viz.github.io/user_guide/interactions/bindings_widgets.html#bindings-widgets">Interactive Binning</a>, <a href="https://altair-viz.github.io/user_guide/transform/filter.html#filter-transform">Filter Transformations</a>, <a href="https://altair-viz.github.io/altair-tutorial/notebooks/09-Geographic-plots.html">Geographic plots</a>, and <a href="https://altair-viz.github.io/user_guide/transform/fold.html">Fold Transformations</a>
+ 1. <a href="https://medium.com/multiple-views-visualization-research-explained/same-data-multiple-perspectives-curse-of-knowledge-in-visual-data-communication-d827c381f936">Same Data, Multiple Perspectives</a> 
+ 2. <a href="https://clauswilke.com/dataviz/telling-a-story.html">FDV, Ch. 29: Telling a story and making a point</a> 
+ 3. <a href="https://jekyllrb.com/tutorials/home/">Jekyll Tutorials (hit "Next" to see them at bottom)</a>
+ 4. <a href="https://streamlit.io/">Streamlit docs</a> - in particular the <a href="https://docs.streamlit.io/get-started/fundamentals/main-concepts">the Main Concepts </a> and  <a href="https://docs.streamlit.io/get-started/tutorials/create-an-app">Make an App</a> tutorials, and the docs for <a href="https://docs.streamlit.io/develop/api-reference/text">text</a>, <a href="https://docs.streamlit.io/develop/api-reference/layout">layout</a> and <a href="https://docs.streamlit.io/develop/api-reference/media/st.image">image</a> API elements
+
+ 

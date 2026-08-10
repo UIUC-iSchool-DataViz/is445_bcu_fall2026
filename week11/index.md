@@ -1,55 +1,19 @@
 ---
 layout: week
 visible: true
-icon: undraw_programmer_imem.svg
+icon: undraw_Books_l33t.svg
 notitle: true
 examples:
-  - filename: inClass_week11.ipynb
-    type: ipynb
-    title: In class notebook, Week 11
-    description: In class notebook
-  - filename: prep_notebook_week11.ipynb
-    type: ipynb
-    title: Prep notebook, Week 11
-    description: In class notebook
-  - filename: prepJekyll
+  - filename: prepMaterials
     type: iodide
-    title: Prep Jekyll Files, Week 11
+    title: Prep Streamlit App Files, Week 12
     description: In class notebook
-    link: https://github.com/UIUC-iSchool-DataViz/is445_obuobg_spring2026/tree/main/week11/prepJekyll
-  - filename: inClassJekyll
+    link: https://github.com/UIUC-iSchool-DataViz/is445_obuobg_spring2026/tree/main/week12/prepMaterials
+  - filename: InClass
     type: iodide
-    title: In class Jekyll Files, Week 11
-    description: Updating storage of Jekyll files in class
-    link: https://github.com/UIUC-iSchool-DataViz/is445_obuobg_spring2026/tree/main/week11/inClassJekyll
-  - filename: prep_script_week10.py
-    type: py
-    title: Prep script file, Week 11
-    description: In class notebook
-  - filename: inClass_script_week10.py
-    type: py
-    title: In class script file, Week 11
-    description: In class notebook
-  - filename: prep_notebook_week09_fall2022
-    type: iodidePast
-    title: Prep Starboard Notebook, Fall 2023
-    description: Prep Starboard Notebook
-    link: https://starboard.gg/nb/n9nb6N8
-  - filename: prep_notebook_week10_fall2022
-    type: iodidePast
-    title: Extra Starboard Fall 2023 - Dashboarding
-    description: Prep Starboard Notebook
-    link: https://starboard.gg/nb/nuXwr0l
-  - filename: prep_notebook_week11
-    type: iodidePast
-    title: Previous class notebook
-    description: Prep Iodide Notebook, Spring 2020
-    link: https://alpha.iodide.io/notebooks/4399/
-  - filename: prep_notebook_week10_fall2021
-    type: iodidePast
-    title: Previous class notebook
-    description: Prep Starboard Notebook, Fall 2021
-    link: https://starboard.gg/nb/nXvyanN
+    title: In class Streamlit App, Week 12
+    description: Updating storage of Streamlit files in class
+    link: https://github.com/UIUC-iSchool-DataViz/is445_obuobg_spring2026/tree/master/week12/inClass
 data:
   - filename: mobility.csv
     type: dataLink
@@ -58,18 +22,19 @@ data:
     link: https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_data/main/mobility.csv
 ---
 
-# Considering your audience; Jekyll Web Dev & Streamlit
+# Web dev with Streamlit + HuggingFace
 
-Starting to develop Streamlit apps for hosting on HuggingFace.
+Today we'll cover a brief intro of [Streamlit](https://streamlit.io/) on [HuggingFace Spaces](https://huggingface.co/docs/hub/en/spaces-sdks-streamlit)and web development in general.
 
-Viz for self/peers/public.
+ 
+## Extra files
+
+
+Full corgi dataset available [here](corg/corgiData_countries_full_2020.json).
+
 
 
 ## Optional reading list
 
- 1. <a href="https://medium.com/multiple-views-visualization-research-explained/same-data-multiple-perspectives-curse-of-knowledge-in-visual-data-communication-d827c381f936">Same Data, Multiple Perspectives</a> 
- 2. <a href="https://clauswilke.com/dataviz/telling-a-story.html">FDV, Ch. 29: Telling a story and making a point</a> 
- 3. <a href="https://jekyllrb.com/tutorials/home/">Jekyll Tutorials (hit "Next" to see them at bottom)</a>
- 4. <a href="https://streamlit.io/">Streamlit docs</a> - in particular the <a href="https://docs.streamlit.io/get-started/fundamentals/main-concepts">the Main Concepts </a> and  <a href="https://docs.streamlit.io/get-started/tutorials/create-an-app">Make an App</a> tutorials, and the docs for <a href="https://docs.streamlit.io/develop/api-reference/text">text</a>, <a href="https://docs.streamlit.io/develop/api-reference/layout">layout</a> and <a href="https://docs.streamlit.io/develop/api-reference/media/st.image">image</a> API elements
-
- 
+ 1. <a href="https://streamlit.io/">Streamlit docs</a> - in particular the <a href="https://docs.streamlit.io/get-started/fundamentals/main-concepts">the Main Concepts </a> and  <a href="https://docs.streamlit.io/get-started/tutorials/create-an-app">Make an App</a> tutorials, and the docs for <a href="https://docs.streamlit.io/develop/api-reference/text">text</a>, <a href="https://docs.streamlit.io/develop/api-reference/layout">layout</a> and <a href="https://docs.streamlit.io/develop/api-reference/media/st.image">image</a> API elements
+ 2. <a href="https://huggingface.co/docs/hub/en/spaces-sdks-streamlit">Streamlit on HuggingFace</a> 
