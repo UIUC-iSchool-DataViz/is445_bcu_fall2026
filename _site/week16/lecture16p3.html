@@ -1,0 +1,376 @@
+<!doctype html>
+<html>
+  <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<title>Lecture 16.2 - WordClouds & networks (for Quiz and EC)</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.0.2/dist/reset.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.0.2/dist/reveal.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.0.2/dist/theme/white.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/5.11.2/css/font-awesome.min.css">
+
+<!-- Theme used for syntax highlighting of code -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.0.2/dist/reveal.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.0.2/plugin/markdown/markdown.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.0.2/plugin/highlight/highlight.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.0.2/plugin/notes/notes.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.0.2/plugin/math/math.js"></script>
+
+
+
+</style>
+
+  <link rel="stylesheet/less" type="text/css" href="/is445_obuobg_spring2026/assets/styles.less" />
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+          <section class="titleslide">
+              <h1>Lecture 16.2 - WordClouds & networks (for Quiz and EC)</h1>
+              <h2>Jill Naiman</h2>
+              <h2>Data Visualization - Spring 2026</h2>
+          </section>
+        <section data-markdown
+           data-separator="^\n---\n"
+           data-separator-vertical="^\n----\n">
+          <script type="text/template">
+## This week
+
+ 1. Networked & Hierarchical Data
+ 1. Word Clouds
+
+---
+
+<br>
+<br>
+<br>
+
+# Topic 2: Networked & Hierarchical Data
+
+---
+
+## Networked and Hierarchical Data
+
+ 1. Node-link diagrams
+ 1. Matrix views
+
+<img src="images/networks/compareMatrixNT.png" width="800" alt="Two panel figure showing two representations of the same network dataset.  On the left, the visualization is a node-link diagram in which points are connected with lines.  Lines are colored by a value between 0 and 100.  On the right a matrix-view is shown with each node listed on both x and y axis, and each cell of each x/y combination highlighted with a value between 0 and 100."/>
+
+From: <a href="https://www.researchgate.net/publication/258716465_Visualizing_Weighted_Networks_A_Performance_Comparison_of_Adjacency_Matrices_versus_Node-link_Diagrams">this article</a>
+
+notes:
+There are two primary types of visualization for data that has inherent linkages.
+
+This figure here is actually showing the same networked dataset.
+
+---
+
+## Node-link Diagrams
+
+ 1. Trees
+ 1. Force-Directed Graphs
+
+<img src="images/networks/circlesTree.png" width="400" alt="A force directed graph visualization.  Orange circular nodes are connected by blue lines.  Visualization shows several highly connected nodes as well as many sparse ones."/>
+
+notes:
+These are the primary ways that you would draw a linked node diagram.
+
+You might have different sizes of symbols, different shapes, or different link or symbol colors to encode other information.
+
+---
+
+## Node-link Diagrams
+
+ 1. Trees
+ 1. Force-Directed Graphs
+
+<img src="images/networks/hairball.png" width="600" alt="A force directed graph of a network from a friend group from a FaceBook dataset.  Points are overlapping and difficult to read, leading this to be classified as a 'hairball' type network visualization."/>
+
+From: <a href="https://github.com/jcatw/snap-facebook">this GitHub</a>
+
+notes: in the python lecture we'll be working with a subset of this facebook dataset - showing linkages between individuals as their facebook friendships
+
+this is a node-link diagram of this full facebook dataset showing groups of connected individuals, and how the groups are connected to eachother.
+
+---
+
+## Node-link Diagrams
+
+ 1. Nodes
+   * might have 0-to-many edges linked to them
+ 1. Edges (sometimes called "links")
+   * associated specifically with 2 nodes
+   * can have a direction
+   * can have a weight
+
+<img src="images/networks/coldWarLong.jpg" width="800" alt="A node-link diagram showing links between alliances in the cold war.  One cluster shows connections between Portugal, South Africa and Rhodesia.  Another cluster shows links between Israel, USA, and China and USA is further connected to the United Kingdom, New Zealand and Australia.  The United Kingdom, Australia, and New Zealand are connected to each other and the United Kingdom, Malaysia and New Zealand are connected."/>
+
+notes:
+This is a diagram of some selected military alliances during the Cold War.
+
+---
+
+## Node-link Diagrams
+
+ 1. Nodes
+   * might have 0-to-many edges linked to them
+ 1. Edges
+   * associated specifically with 2 nodes
+   * can have a direction
+   * can have a weight
+
+<img src="images/networks/geneticNetwork.png" width="800" alt="A diagram showing several node-link diagrams connecting several clusters of genes.  The BRCA1 gene is highlighted."/>
+
+notes:
+One common use-case for these is genetics. Scientists need visualizations to understand how one gene affects another, either directly OR **indirectly**.
+
+here is shown an example of how the BRCA genes associated with some forms of breast cancer are linked to various other genes.
+
+---
+
+## Tree Diagrams
+
+ * Topological
+ * Ordered
+   * Left-to-Right
+   * Inside-Out
+   * Top-to-bottom
+ * Always one incoming edge (low density)
+ * Discrete, not Continuous
+
+<img src="images/networks/trees.png" width="800" alt="A two panel tree diagram.  On the left, a hierarchial tree shows Earth at the top, the second layer below shows continents (e.g., Africa) and the third layer below shows countries, and the final fourth layer shows several cities within these countries.  The right panel shows a hierarchial, circular diagram with one central point which radiates outward as the hierarchy becomes more specific."/>
+
+notes:
+trees have a topology or hierarchy. These are especially good for a *deep* hierarchy.
+
+The physical space between nodes isn't meaningful like it would be in a scatter plot. Rather the number of "hops" along edges is important.
+
+The left hand plot has a top-down ordering, while the right-hand plot is ordered radially such that the most connected object is at the center.
+
+---
+
+## Force-Directed Graphs
+
+ * Nodes push away from each other as if their edges are springs.
+ * Nodes push away from each other by local repulsion force.
+ * Forces can be weighted.
+
+<img src="images/networks/forceDirectedGraph.gif" width="450" alt="A short animation of the creation of a force-directed graph.  The node-link diagram starts as a 'hairball' and over the course of the simulation expands to a maximum number of non-interacting clusters."/>
+
+notes:
+These use simulated forces to push apart what might otherwise look like a mad hairball.
+
+Edge springyness can be weighted by edge weight, node repulsion can be weighted by node weight. (We'll play with this)
+
+You could place the points in any arbitrary place and let them evolve. You could start with a scatter plot representing numerical values, but the nodes will just move. You could also put all the points at the same starting place.
+
+Note that this means these plots are in a sense "non-deterministic" in that you can get slightly different plots every time. 
+
+---
+
+## Force-Directed Graphs
+
+ * Path Distance
+ * Joint or Disjoint
+ * Discrete, not Continuous
+
+<img src="images/networks/disjoint.png" width="450" alt="Force directed graph with several distinct clusters and mostly only-few connected nodes."/>
+
+notes:
+These are useful for identifying clusters, finding all possible paths, finding the shortest path, finding all adjacent nodes, finding bridges between unconnected nodes, etc.
+
+---
+
+## Force-Directed Graphs
+
+ 1. Drawbacks:
+   * Non-deterministic (different every time)
+   * Link Density can be an issue when over 3-4 links per node
+
+<img src="images/networks/SocialNetworkAnalysis.png" width="550" alt="Force directed graph with nodes and links colored by network connection.  Node sizes are proportional to connectivity.  With many nodes, links, colors and sizes, the graph is on the 'edge' of readability."/>
+
+notes:
+this is a social network graph that looks fine at high resolution, but on this screen is more or less unreadable.
+
+---
+
+## Matrix Views
+
+ 1. Adjacency Matrix
+   * List all values along X AND Y axes
+
+<img src="images/networks/coldWarLong.jpg" width="400" alt="A node-link diagram showing links between alliances in the cold war.  One cluster shows connections between Portugal, South Africa and Rhodesia.  Another cluster shows links between Israel, USA, and China and USA is further connected to the United Kingdom, New Zealand and Australia.  The United Kingdom, Australia, and New Zealand are connected to each other and the United Kingdom, Malaysia and New Zealand are connected."/></td>
+<img src="images/networks/coldWarMatrix.png" width="400" alt="A matrix view of the different alliances during the cold war."/></td>
+
+notes:
+Matrix views remove occlusion and hairball issues completely. They are preferred for extremely dense data.
+
+However they do not show topology, and they might be less intuitive to identify clustering.
+
+---
+
+## Matrix Views
+
+ 1. Adjacency Matrix
+   * List all values along X AND Y axes
+   * Can cut in half along diagonal if non-directional
+
+<img src="images/networks/foldedAdjacencyMatrix.jpg" width="450" alt="A matrix view of a network that shows the connection between different locations in a town.  The matrix is truncated on a diagonal to avoid duplicating connections."/>
+
+notes:
+This is sometimes called a "Folded" adjacency matrix
+
+---
+
+## Matrix Views
+
+ 1. Adjacency Matrix
+   * List all values along X AND Y axes
+   * Can cut in half along diagonal if non-directional
+   * Color cells by edge weight
+
+<img src="images/networks/brains.png" width="400" alt="A multipanel chart showing two network diagrams for synaptic connections in brain scans (left and middle panels), and brain imaging (right panel).  The diagram shows many connections across many panels, showing difficulty for a non-expert in reading the graph."/>
+
+notes:
+Matrix views remove occlusion and hairball issues completely. They are preferred for extremely dense data.
+
+However they do not show topology, and they might be less intuitive to identify clustering.
+
+As you can see by the square plots here - these are supposed to show the networked structure of some brain data - can you easily pick out what variables are linked? (I can't!)
+
+---
+
+## Matrix Views
+
+<img src="images/networks/pokemonTypeChart.png" width="500" alt="A non-symmetric matrix network visualization showing points gained and lost from attackers and defenders in the Pokeman game.  Attackers can gain more points than defenders lose and visa versa, leading to the non-symmetry of the matrix visualization."/>
+
+notes:
+Pokemon type-effectiveness chart yay!
+
+So, AJ (the other instructor) put this in and I think I'd be remiss if I didn't show it, but I literally have no idea what is going on here - does anybody here play pokeman and can explain it to the class?
+
+Notice this is directional - Attackers and Defenders don't have same effect on different types.
+
+---
+
+## Hierarchical Data
+
+ 1. Trees
+ 1. Containment
+   1. Treemaps
+
+<img src="images/networks/d3treemap.png" width="500" alt="A three-dimensional containment visualization of the D3.js visualization library.  Functions from this library are clustered by type of visualization (e.g., circle, line)."/>
+
+notes:
+Another way to look at networked data - treemaps
+
+containment better at shallow, broad trees than node-link tree diagrams
+
+good for identifying topological outliers
+
+This visualization is file size of the D3 visualization library.
+
+---
+
+## Hierarchical Data
+
+ 1. Trees
+ 1. Containment
+   1. Treemaps
+   1. Nested Circles
+
+<img src="images/networks/circlePacking.png" width="400" alt="A nested circle map visualizing the 'tree' dataset from the R library: https://r-graph-gallery.com/315-hide-first-level-in-circle-packing.html"/>
+
+notes:
+This is also known as circle-packing.
+
+---
+
+## Compound Networks
+
+ 1. Network and Tree together
+
+<img src="images/networks/grouseFlocks.gif" width="350" alt="A two panel image showing the same hierarchical network visualized as a tree (left) and as a nested set of circles (right)."/>
+<img src="images/networks/compoundNetwork.png" width="450" alt="A nested circle visualization showing alliances during the cold war with countries nested in larger circles of continents.  "/>
+
+notes:
+Now we're combining a hierarchical nested circle containment WITH linked nodes from our cold war alliances.
+
+There are lots of ways to combine types of network visualizations like this.
+
+---
+
+## An aside: <a href="https://en.wikipedia.org/wiki/Hilma_af_Klint">Hilma af Klint</a>
+
+<img src="images/networks/hak1.jpg" width="350" alt="A Hilma Af Klint painting showing nested circles and geometry which looks similar to nested circle network visualizations."/>
+
+---
+
+## An aside: <a href="https://en.wikipedia.org/wiki/Hilma_af_Klint">Hilma af Klint</a>
+
+<img src="images/networks/hak2.jpg" width="350" alt="A Hilma Af Klint painting showing nested circles and geometry which looks similar to nested circle network visualizations."/>
+
+---
+
+<br>
+<br>
+<br>
+
+# Topic 3: Text visualization & Wordclouds
+
+---
+
+## Today's Python: Networks & Word clouds
+
+<img src="https://wordcloudapi.com/word_cloud.png" width="600px" alt="A wordcloud showing relative frequencies of words from discussions of the star wars movies.">
+
+notes:
+We'll be focusing a lot on ways of representing text occurrences in Python with histograms and wordclouds and then if we have time we'll circle back to networks
+
+---
+
+<br>
+
+# To Python!
+
+          </script>
+        </section>
+      </div>
+    </div>
+<script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+        fragments: true,
+        fragmentInURL: true,
+        hash: true,
+        width: 1024,
+        height: 768,
+        margin: 0.02,
+        plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath],
+        dependencies: [
+            { src: 'https://cdn.jsdelivr.net/npm/reveald3@1.5.5/reveald3.js'}
+        ],
+		keyboard: {
+		},
+        center: false,
+        transition: 'none',
+        backgroundTransition: 'none',
+        reveald3: {
+            runLastState: false
+        }
+    });
+</script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>
+
+
+  </body>
+</html>
+

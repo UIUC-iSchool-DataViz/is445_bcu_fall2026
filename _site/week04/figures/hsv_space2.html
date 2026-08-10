@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <script src="https://cdn.jsdelivr.net/npm/@jaames/iro@5"></script>
+<style>
+  .container {
+      margin: auto;
+      width: 500px;
+  }
+  .slider-row {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 5px;
+  }
+  .slider-label {
+      font-family: monospace;
+      font-weight: bold;
+      min-width: 150px;
+      text-align: right;
+  }
+  .slider-wrapper {
+      flex: 1;
+  }
+</style>
+  </head>
+  <body>
+      <div id="picker" class="container">
+      </div>
+      <div class="container">
+          <p id="rgba" style="font-family: monospace;"></p>
+          <p id="hex" style="font-family: monospace;"></p>
+          <p id="hsv" style="font-family: monospace;"></p>
+      </div>
+    
+    <script type="text/javascript">
+
+        sliderTypes = ["hue", "saturation", "value", "red", "green", "blue",
+                   "alpha", "kelvin temperature"];
+        
+        sliders = sliderTypes.map(t => ({
+            component: iro.ui.Slider,
+            options: {
+                sliderType: t,
+                borderWidth: 3,
+                borderColor: "#555555"
+            }
+        }));
+
+        var colorPicker = new iro.ColorPicker('#picker', {
+            layout: [
+                {
+                    component: iro.ui.Wheel,
+                    options: {
+                        borderWidth: 3,
+                        borderColor: "#555555"
+                    },
+                }
+            ].concat(sliders)
+        });
+        
+        function addLabels() {
+            const pickerElement = document.querySelector('#picker');
+            const sliderElements = pickerElement.querySelectorAll('.IroSlider');
+            
+            sliderElements.forEach((slider, index) => {
+                // Skip if already wrapped
+                if (slider.parentNode.classList.contains('slider-wrapper')) return;
+                
+                // Create wrapper row
+                const row = document.createElement('div');
+                row.className = 'slider-row';
+                
+                // Create label
+                const label = document.createElement('div');
+                label.className = 'slider-label';
+                label.textContent = sliderTypes[index].charAt(0).toUpperCase() + sliderTypes[index].slice(1) + ':';
+                
+                // Create slider wrapper
+                const wrapper = document.createElement('div');
+                wrapper.className = 'slider-wrapper';
+                
+                // Insert row before slider
+                slider.parentNode.insertBefore(row, slider);
+                
+                // Move slider into wrapper, add both to row
+                row.appendChild(label);
+                row.appendChild(wrapper);
+                wrapper.appendChild(slider);
+            });
+        }
+        
+        // Initial label addition
+        setTimeout(addLabels, 100);
+        
+        // Watch for DOM changes and re-apply labels if needed
+        const observer = new MutationObserver(() => {
+            addLabels();
+        });
+        
+        observer.observe(document.querySelector('#picker'), {
+            childList: true,
+            subtree: true
+        });
+
+        colorPicker.on("color:change", color => {
+            document.querySelector("#rgba").innerHTML = color.rgbaString;
+            document.querySelector("#hex").innerHTML = color.hexString;
+            document.querySelector("#hsv").innerHTML = color.hslString;
+        });
+
+        var _transitions = [{
+            transitionForward: () => setup(),
+        }];
+
+    </script>
+  </body>
+</html>

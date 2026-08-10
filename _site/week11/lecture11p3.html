@@ -1,0 +1,239 @@
+<!doctype html>
+<html>
+  <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<title>Lecture 10.3 - Streamlit & HuggingFace Introduction; VSCode</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.0.2/dist/reset.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.0.2/dist/reveal.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.0.2/dist/theme/white.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/5.11.2/css/font-awesome.min.css">
+
+<!-- Theme used for syntax highlighting of code -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.0.2/dist/reveal.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.0.2/plugin/markdown/markdown.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.0.2/plugin/highlight/highlight.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.0.2/plugin/notes/notes.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.0.2/plugin/math/math.js"></script>
+
+
+
+</style>
+
+  <link rel="stylesheet/less" type="text/css" href="/is445_obuobg_spring2026/assets/styles.less" />
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+          <section class="titleslide">
+              <h1>Lecture 10.3 - Streamlit & HuggingFace Introduction; VSCode</h1>
+              <h2>Jill Naiman</h2>
+              <h2>Data Visualization - Spring 2026</h2>
+          </section>
+        <section data-markdown
+           data-separator="^\n---\n"
+           data-separator-vertical="^\n----\n">
+          <script type="text/template">
+## Altair
+
+```javascript
+
+brush = alt.selection_interval(encodings=['x','y'])
+
+chart1 = alt.Chart(mobility_url).mark_rect().encode(
+    alt.X("Student_teacher_ratio:Q", bin=alt.Bin(maxbins=10)),
+    alt.Y("State:O"),
+    alt.Color("count()")
+).properties(
+   height=400
+).add_params(
+        brush
+)
+
+chart2 = alt.Chart(mobility_url).mark_bar().encode(
+    alt.X("Mobility:Q", bin=True,axis=alt.Axis(title='Mobility Score')),
+    alt.Y('count()', axis=alt.Axis(title='Mobility Score Distribution'))
+).transform_filter(
+    brush
+)
+
+chart = (chart1.properties(width=300) | chart2.properties(width=300))
+
+chart
+```
+
+notes:
+just some reminders for what we worked on last time -- mostly with altair and making some initial dashboards
+
+---
+
+## Altair in Streamlit (in HuggingFace & Jekyll)
+
+```javascript
+
+brush = alt.selection_interval(encodings=['x','y'])
+
+chart1 = alt.Chart(mobility_url).mark_rect().encode(
+    alt.X("Student_teacher_ratio:Q", bin=alt.Bin(maxbins=10)),
+    alt.Y("State:O"),
+    alt.Color("count()")
+).properties(
+   height=400
+).add_params(
+        brush
+)
+
+chart2 = alt.Chart(mobility_url).mark_bar().encode(
+    alt.X("Mobility:Q", bin=True,axis=alt.Axis(title='Mobility Score')),
+    alt.Y('count()', axis=alt.Axis(title='Mobility Score Distribution'))
+).transform_filter(
+    brush
+)
+
+chart = (chart1.properties(width=300) | chart2.properties(width=300))
+
+chart
+```
+
+How can we share our creations with the public?
+
+notes:
+so we can make some cool things but how can we share them with our audience?
+
+we'll discuss how to do this with Streamlit (and later Jekyll)
+
+---
+
+## Streamlit
+
+[Streamlit](https://streamlit.io/) is a way to write "apps" in a Python script that can be hosted on the web.
+
+![A screenshot of the homepage of the Streamlit "hello world" example where a bit of code is used to generate a simple online application.](/is445_obuobg_spring2026/week11/images/streamlit1.png)
+
+notes:
+where we see a simple example from the video linked above showing how Markdown as a string in Python is translated into headers and text on a page.
+
+---
+
+## HuggingFace
+
+[HuggingFace](https://huggingface.co/) is the platform that we'll be using to host our interactive apps.
+
+![Screenshot of the HuggingFace logo.](https://huggingface.co/datasets/huggingface/brand-assets/resolve/main/hf-logo-with-title.png)
+
+notes:
+have folks heard of huggingface?
+
+huggingface is a place where folks can share code/datasets and also host apps 
+
+You got a brief intro to huggingface in Lab 6!
+
+---
+
+## Spaces on HuggingFace
+
+We will make use of [Streamlit "Spaces"](https://huggingface.co/spaces?sort=trending&search=streamlit) on HuggingFace to host our apps.
+
+![Screenshot of the "Spaces" home page from HuggingFace showing various example Spaces that folks can duplicate.](/is445_obuobg_spring2026/week11/images/huggingface_apps_list.png)
+
+---
+
+## Streamlit in HuggingFace
+
+We'll learn how to build Altair visualizations like [this IS445 Demo](https://huggingface.co/spaces/jnaiman/is445_demo).
+
+notes:
+**go to this page!!!**
+
+---
+
+## VSCode to develop apps
+
+We'll be using a new interface on PrairieLearn to develop code: VSCode
+
+![](images/vscode_view.png)
+
+---
+
+## VSCode to develop apps
+
+![](images/vscode_link.png)
+
+
+notes: 
+we talked a bit about this last week, but reminder -- you'll see now a browser VSCode workspace option for in class activities
+
+---
+
+## VSCode to develop apps
+
+![](images/vscode_link.png)
+
+If you want to install locally:
+* Install VSCode: https://code.visualstudio.com/download
+* Install local conda environment: https://uiuc-ischool-dataviz.github.io/is445_bcubcg_fall2025/week01/installation_instructions.html
+
+
+notes: 
+if you want to install locally you'll have to figure out two steps
+
+---
+
+## VSCode to develop apps
+
+![](images/vscode_link.png)
+
+If you want to install locally:
+* Install VSCode: https://code.visualstudio.com/download
+* Install local conda environment: https://uiuc-ischool-dataviz.github.io/is445_bcubcg_fall2025/week01/installation_instructions.html
+
+We don't expect you to do any of this!  You can just use the VSCode workspaces provided for you on PrairieLearn.
+
+
+notes: 
+but we don't actually expect you to do this! you can use the VSCode workspaces spaces on PrarireLearn that already have the packages installed
+
+---
+
+## To Streamlit in Python!
+          </script>
+        </section>
+      </div>
+    </div>
+<script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+        fragments: true,
+        fragmentInURL: true,
+        hash: true,
+        width: 1024,
+        height: 768,
+        margin: 0.02,
+        plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath],
+        dependencies: [
+            { src: 'https://cdn.jsdelivr.net/npm/reveald3@1.5.5/reveald3.js'}
+        ],
+		keyboard: {
+		},
+        center: false,
+        transition: 'none',
+        backgroundTransition: 'none',
+        reveald3: {
+            runLastState: false
+        }
+    });
+</script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>
+
+
+  </body>
+</html>
+

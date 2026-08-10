@@ -1,0 +1,573 @@
+<!doctype html>
+<html>
+  <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<title>Lecture 10.2 - Viz audience</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.0.2/dist/reset.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.0.2/dist/reveal.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.0.2/dist/theme/white.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/5.11.2/css/font-awesome.min.css">
+
+<!-- Theme used for syntax highlighting of code -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.0.2/dist/reveal.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.0.2/plugin/markdown/markdown.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.0.2/plugin/highlight/highlight.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.0.2/plugin/notes/notes.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.0.2/plugin/math/math.js"></script>
+
+
+
+</style>
+
+  <link rel="stylesheet/less" type="text/css" href="/is445_obuobg_spring2026/assets/styles.less" />
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+          <section class="titleslide">
+              <h1>Lecture 10.2 - Viz audience</h1>
+              <h2>Jill Naiman</h2>
+              <h2>Data Visualization - Spring 2026</h2>
+          </section>
+        <section data-markdown
+           data-separator="^\n---\n"
+           data-separator-vertical="^\n----\n">
+          <script type="text/template">
+## Last Week
+
+<img src="images/week11_before.png" alt="Mindmap visualization of materials covered last week with Jekyll and Altair/Vega-lite being the most recently covered.">
+
+notes:
+reminder of where we are as of last week!  We started doing more stuff with Altair interactively, and started doing jekyll stuff
+
+---
+
+## This Week
+
+<img src="images/week11_after.png" alt="Mindmap visualization of materials covered including this week, with Streamlit and Viz Audience being most recently added.">
+
+notes:
+this week we will discuss how one has to consider the audience of their visualization - is your audience you? your peers? others?
+
+we'll start linking stuff together more in altair (which we started last week) with Jekyll and then take a look at streamlit
+
+
+---
+
+## Today
+
+ 1. Viz for Self/Peers/Others
+ 1. Review about final projects
+ 1. Streamlit and HuggingFace
+
+note:
+we'll get to making some apps with streamlit and huggingface!
+
+---
+
+<br />
+<br />
+<br />
+
+# TOPIC 1: Viz Audience
+
+---
+
+## Three Classes of Visualizations
+
+1. Viz for Self
+1. Viz for Experts
+1. Viz for the Public
+
+---
+
+## Viz for Self
+
+There are no rules!
+
+<img src="https://media1.giphy.com/media/EJIqwKKY30Dlu/giphy.gif" alt="Gif animation of Louis from the Bobs Burgers cartoon laughing manically in front of a large fire.">
+
+notes:
+Labels don't matter. Colors don't have to look nice. Interactivity doesn't have to be fast. Here we are just trying to get something on screen that represents the data. Often this is challenge enough.
+
+As the designer, you know what choices you have made, so "elegant design" isn't a huge deal - although don't go too crazy or you could make things more confusing for yourself.  
+
+---
+
+## Viz for Self
+
+<img src="images/walsh.gif" width="700" alt="Animated gif of a 1-dimensional visualization of audio levels changing over time.  The visualization is made in the 3-dimensional special effects software Houdini."/>
+
+notes:
+This is an example from AJ (the in-person instructor). He uses 3D software like Houdini in his "everyday" life and so this is his software of choice.  Here, he used 3D software to make a 2D plot, and arranged points to look like a bar chart even though they were rendered as individual points - aka a scatter plot.
+
+It just had to work, and we used the most convenient software.
+
+---
+
+## Viz for Self
+
+<img src="images/L25n128TNG_tmp_gas_metallicity_history.png" width="700" alt="Visualization of 'Average metallicity around stars' as a function of 'Redshift' from the IllustrisTNG simulations. This is an example of 'viz for self' so there is little care taken fo understandability for others."/>
+
+notes:
+Here are some examples from my work
+
+There are plots of data from a large scale simulation of the universe.  Here, I'm curious about how the average number of elements heavier than helium in our simulation changes over time.
+
+---
+
+## Viz for Self
+
+name of: L25n512TNG_shenplot_STARS_ylimn0p5_bins_largeEu_1e2_nx050_ny050_sn099.png
+
+<img src="images/L25n512TNG_shenplot_STARS_ylimn0p5_bins_largeEu_1e2_nx050_ny050_sn099.png" width="500" alt="Visualization of '[Eu/Fe]' as a function of '[Fe/H]' from the IllustrisTNG simulations for currently star forming galaxies. This is an example of 'viz for self' so there is little care taken fo understandability for others and legends are small, colormap is not carefully considered."/>
+
+notes:
+You can even tell from the name of the file (which runs off the page here) that I'm playing with a bunch of things.  For example I'm plotting here stars, but there is no way you'd really get that from the actual plot itself.
+
+These are plots that show an example of how one might "explore" the data - look for relationships.
+
+---
+
+## Viz for Self
+
+Later this became (viz for peers)
+
+<img src="images/L75n1820TNG_eufef07065_allMstar_eucut_massweighted_bigrange_rfracAll_histo.png" width="600" alt="Visualization of '[Eu/Fe]' as a function of '[Fe/H]' from the IllustrisTNG simulations for currently star forming galaxies. This is an example of 'viz for peers' as the prior 'viz for self' plot has been transformed into a plot for a publication.  Care has been taken with color schemes, legend readability, and using conventions from the domain."/>
+
+[Paper if you're really curious](https://arxiv.org/pdf/1707.03401.pdf)
+
+notes:
+later, that plot became this plot right here which can be thought of as viz-for peers
+
+While its probably not something that you all understand (unless there are some astronomers in our midst) - you can see I'm more careful here about fonts, presentatin, color schemes and actually labeling things
+
+
+---
+
+## Viz for Self
+
+Let's talk about exploration.
+
+ * What are characteristics of data that would influence how you visualize it?
+ * What information do you have that would be visually interesting?
+ * What information do you not have that you need to understand the importance of the data?
+
+Example: A banking database where each record is a bank transaction and the fields include date, deposit or withdrawal amount, customer id, and the interest rate of the account.
+
+notes:
+some questions you want to be asking while you are exploring your data with the intent to visualize it
+
+in these examples -- what do you think are some interesting things to visualize? what information would a consumer of your viz need to know?
+
+---
+
+## Viz for Self
+
+Let's talk about exploration.
+
+ * What are characteristics of data that would influence how you visualize it?
+ * What information do you have that would be visually interesting?
+ * What information do you not have that you need to understand the importance of the data?
+
+Example: A spreadsheet of experimental crop growth measurements where each record is a measurement, and the fields include date, plant species, plant id number, number of leaves, plant height, number of internodes, and average leaf length.
+
+notes:
+internodes = the number of "generations" of a plant, aka how many branches come off the main stem.
+
+in these examples -- what do you think are some interesting things to visualize? what information would a consumer of your viz need to know?
+
+
+---
+
+## Viz for Self
+
+Let's talk about exploration.
+
+ * What are characteristics of data that would influence how you visualize it?
+ * What information do you have that would be visually interesting?
+ * What information do you not have that you need to understand the importance of the data?
+
+Example: A computational simulation of a galaxy where each record is a timestep in the evolution of the 3D grid, and the fields include time, X position, Y position, Z position, gas density, gas temperature, gas metallicity, and number of stars.
+
+notes:
+in these examples -- what do you think are some interesting things to visualize? what information would a consumer of your viz need to know?
+
+
+---
+
+## Viz for Self
+
+What do you want to get out of visualization for yourself?
+
+ * Do you want to find meaning?
+ * Do you want to understand how to guide further visualizations?
+ * Is the story you want to tell already known to you?
+ * What __shortcuts__ can you take?
+
+notes:
+shortcut ideas ... subsampling, delete unused fields, use a simpler tool, manually select outliers by hand instead of doing it procedurally
+
+forget labels that others have to figure out
+
+don't worry about color schemee
+
+---
+
+## Viz for Experts
+
+To design a visualization for experts, you need to analyze how they process information.
+
+ * What do they know?
+ * What conventions will they assume?
+ * Are they able to fill in the blanks of information?
+
+---
+
+## Viz for Experts
+
+<img src="images/sci_tornado.png" width="700" alt="Multipanel plot of examples of 'viz for peers' or 'viz for experts'.  Three vertical panels on the left show different views of storm velocity and other storm strength metrics.  Two panels on the left show an isosurface of the storm (top) and storm points on various days (bottom)."/>
+
+notes:
+Here's a series of visualizations made by or for domain experts that AJ just had lying around on his laptop.
+
+What are some things you notice they have in common?
+
+---
+
+## Viz for Experts
+
+<img src="images/sci_canup.png" width="350" alt="A 2-column, 3-row panel visualization showing different snapshots of a simulation of a planetesimal collating with a proto-Earth."/>
+
+notes:
+Here's a series of visualizations made by or for domain experts that I just had lying around on my laptop.
+
+What are some things you notice they have in common?
+
+---
+
+## Viz for Experts
+
+<img src="images/sci_convection.png" width="700" alt="A slide from a simulation of a 'slab' of the Sun.  Background is visual of hydrodynamical simulation, overlaid are two graphs showing different variables (temperature, density, etc.) as a function of solar depth."/>
+
+notes:
+Here's a series of visualizations made by or for domain experts that I just had lying around on my laptop.
+
+What are some things you notice they have in common?
+
+---
+
+## Viz for Experts
+
+<img src="images/sci_flu.png" width="80%" alt="Map of the United States with flu risk density map overlaid with connections between major transportation hubs."/>
+
+notes:
+Here's a series of visualizations made by or for domain experts that I just had lying around on my laptop.
+
+What are some things you notice they have in common?
+
+---
+
+## Viz for Experts
+
+<img src="images/sci_genes.png" width="80%" alt="Two gene maps showing connections between various genes. Names of each gene use their technical 'phone numbers'."/>
+
+notes:
+Here's a series of visualizations made by or for domain experts that I just had lying around on my laptop.
+
+What are some things you notice they have in common?
+
+---
+
+## Viz for Experts
+
+Experts often want to interrogate the data themselves.
+
+How can they do that?
+ * Linked Dashboards
+ * Side-by-side comparison plots
+ * Text annotation with specific values listed
+ * Color bar annotation
+
+notes:
+ask students - other ideas? what about interactivity? (Interactivity needs to be decent)
+
+---
+
+## Viz for Experts
+
+Experts are looking to isolate variables to make scientific conclusions.
+
+How can we make visualizations more analytical?
+ * Reduce the dimensionality of the image (slices)
+ * Viewpoint from "outside the box"
+ * Extremely high contrast color choices (or highlight different features)
+
+notes:
+ask students - other ideas? What about animated data?
+
+---
+
+## Viz for the Public
+
+This is what you're most accustomed to, because usually YOU are the public.
+
+<img src="images/basedonatruestory.jpg" width="80%" alt="An example of 'viz for the public' showing a list of various movies (e.g. Bohemian Rhapsody, Hidden Figures) with measures of how accurate they are.  Movie timelines are color coded by True, True-ish, False-ish, False, and Unknown categories."/>
+
+notes:
+Who here is an expert on the historical accuracy of movies? Do you think this visualization was created for those experts? Or was it created for you? How can you tell?
+
+---
+
+## Jargon
+
+Definition: Special words or expressions that are used by a particular profession or group and are difficult for others to understand.
+
+<img src="images/hurricane.jpg" width="50%" alt="Cartoon showing four different views of the statement 'There is an eye at the center of the hurricane'.  In the upper left, we see the professor stating this fact, in the upper right we see a student imagining a mental model of a physically accurate hurricane, in the lower right we see a student imagining a big green eye in the center of a tornado, and in the bottom right panel we see a student pointing out there is the letter 'I' in the middle of the word 'hurricane'."/>
+
+notes:
+When working with experts on their data, they will often try to use words that are specific to their field. As a data communicator, it's your job to decipher that jargon and make it more approachable to the public.
+
+---
+
+## Jargon
+
+<img src="images/upgoerfive.png" width="70%" alt="Screenshot of the XKCD comic number 1133. This comic tries to explain a blueprint of the Saturn IV rocket using the 1000 most common words in the English language -- this results in many nonsensical or hard to explain phrases."/>
+
+[xkcd.com/1133](https://xkcd.com/1133/)
+
+notes:
+This XKCD webcomic makes fun of how much jargon scientists use. He tries to explain NASA's Saturn V rocket using only the 1000 most common words in the English language. 
+
+He actually wrote a whole book about science this way called "Thing Explainer."
+
+---
+
+## Jargon
+
+[Simple Writer](https://xkcd.com/simplewriter/)
+
+notes:
+And here's a neat tool he created to help you write your own!
+
+Before:
+"The Advanced Visualization Lab creates cinematic treatments of supercomputer data for immersive displays."
+
+After:
+"The very good picture making team creates movies of huge computer information for screens you can be inside of."
+
+---
+
+## Storytelling
+
+Let's just get it out there: humans don't respond to data. They respond to stories.
+
+Which of these do you care about more?
+ * Global average atmospheric carbon dioxide is 405 ppm.
+ * Polar bears are dying because the ice they use to hunt is melting.
+
+notes:
+In visualization, we really want to tell a story, not just a list of facts.
+
+**plug for data storytelling class!**
+
+---
+
+## Storytelling
+
+Why is that?
+
+<img src="images/storytelling.jpg" alt="Diagram showing how storytelling affects the brain.  Main affects are neural coupling (listener turns story into own ideas), mirroring (listeners experience similar brain activity to each other), dopamine is released, and parts of the cortex are activated."> <!-- width="1000"/>-->
+
+notes:
+Emotional response to storytelling is an evolutionary trait humans developed to form stronger social bonds and learn from each other's experience.
+
+---
+
+## Storytelling
+
+<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/r4k6Gm4tlXw?si=yX3Z66_h1aYZF04d?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+notes:
+play to ~2:43
+
+---
+
+## Storytelling
+
+Freytag's Pyramid
+
+<img src="images/freytag.png" width="90%" alt="Illustration of Freytag's storytelling pyramid with Exposition at the bottom, Rising Action toward the peak, Climax a the top, falling action toward the bottom and denouement at the bottom."/>
+
+notes:
+
+**start back recording!**
+
+A story needs setup, conflict, and resolution. One thing many novice storytellers forget is to have a resolution or ending. You need to wrap it up in a neat package!
+
+aside - "denouement" is one of my favorite words
+
+---
+
+## Storytelling
+
+Characters and Conflict
+ * People as subjects: Two political candidates are battling for office
+ * People as researchers: Dr. Smith is trying to cure cancer
+ * Objects as characters: The photons are trying to push their way to the sun's surface
+
+notes:
+each story is going to have different sorts of characters and different kinds of conflicts
+
+here are a few examples - you can even make scientific data into a story!  Don't you really want to root for the photons to make it out of the sun?
+
+---
+
+## Know your Audience
+
+<iframe width="853" height="480" src="https://www.youtube.com/embed/opqIa5Jiwuw?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+notes:
+so, we won't watch this whole thing, but it is worth checking out how the jargon/language changes when he's talking to different groups of folks
+
+---
+
+## Know your Audience
+
+What do you know about them?
+ * Age
+ * Nationality
+ * Occupation
+ * Affiliation with a Special Interest / Organization
+ * Or is it literally EVERYBODY (web publishing)
+
+notes:
+
+**start back recording!**
+
+You can hone your narrative for certain audiences. If it's the broadest audience, like for journalism shared online, you need to keep in mind that there will be children, grandparents, experts, politicians, people with money, etc all in the audience.
+
+---
+
+## Visualization for the Public
+
+Images can be more powerful than words, text, and numbers. Images can tell stories.
+
+<img src="images/mlkjr.jpg" width="80%" alt="Image of the national mall in the United States capitol when Martin Luther King Jr is giving a famous speech."/>
+
+notes:
+What can you say about this event given the picture? How is this different from an average day on the National Mall in DC?
+
+What is the story of this photograph?
+
+notice that you need the CONTEXT of US history to "get" this story however
+
+---
+
+## Visualization for the Public
+
+Context is vital for the public.
+ * Embed multiple datasets
+ * Place something familiar to relate to the unfamiliar
+ * Smooth transitions so you can see where you've come from and where you're going to
+
+notes:
+This is different from a visualization for Experts where you usually want to isolate the dataset.
+
+With experts, you can asssume some background of understanding.  You might start a presentation or paper with a background summary, but based on the field you don't have to explain as much.  For example, if I'm giving a astronomy talk, I can assume folks know the difference between newtonian gravity and general relativistc treatments and roughly when each apply (GR for going fast, or near big things).
+
+---
+
+## Visualization for the Public
+
+Context is vital for the public.
+
+<img src="images/canup.gif" width="70%" alt="Gif of a section of a cinematic scientific visualization from a documentary showing a physics simulation of a collision between the Earth and a small planetesimal that is thought to have created the Moon."/>
+
+notes:
+The AVL created this sequence for a movie, which originally moved much slower on a large screen, and had a narrator explaining the sequence. Someone recaptured it and made it into a gif, sharing it on reddit with the caption "A simulation of the Earth's moon being formed."
+
+What context might have been lost?
+
+How well does the imagery speak for itself?
+
+---
+
+## Visualization for the Public
+
+Identifying the narrative
+ * Do you first find data, or first find a story?
+ * What is the difference between the data narrative and a narrative for the public?
+
+notes:
+In visualization for the public, typically we will start with a dataset, and then build a narrative around it, and seek out more data to build context.
+
+Data narrative = what the data collector is researching
+
+Public narrative = what makes an interesting story and provides context
+
+This is different than viz for experts where you are typically talking about the dataset you have been working with specifically.
+
+---
+
+## Visualization for the Public
+
+ 1. Aesthetics Matter
+ 1. Interactivity should not have any lag or latency
+ 1. Relative values are often more important than specific values
+ 1. Limit the amount of text/reading
+ 1. Limit the amount of information being packed in
+
+---
+
+## Visualization for the Public
+
+ * [Online Dating - okCupid](https://theblog.okcupid.com/exactly-what-to-say-in-a-first-message-2bf680806c72)
+ * [DiCaprio Love Life - reddit](https://www.reddit.com/r/dataisbeautiful/comments/azjti7/leonardo_dicaprio_refuses_to_date_a_woman_over_25/)
+
+notes:
+What are the narratives of these visualizations? How are they different than just a list of facts?
+
+
+          </script>
+        </section>
+      </div>
+    </div>
+<script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+        fragments: true,
+        fragmentInURL: true,
+        hash: true,
+        width: 1024,
+        height: 768,
+        margin: 0.02,
+        plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath],
+        dependencies: [
+            { src: 'https://cdn.jsdelivr.net/npm/reveald3@1.5.5/reveald3.js'}
+        ],
+		keyboard: {
+		},
+        center: false,
+        transition: 'none',
+        backgroundTransition: 'none',
+        reveald3: {
+            runLastState: false
+        }
+    });
+</script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>
+
+
+  </body>
+</html>
+
