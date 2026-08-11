@@ -2,37 +2,37 @@ instructor:
   name: Jill Naiman
   email: jnaiman@illinois.edu
   office: Online
-  office_hours: Thursdays, 12:30-2pm
+  office_hours: TBD
 tas:
   -
     name: Gaozheng Liu 
     email: gl11@illinois.edu
     office: online
-    office_hours: Mondays and Fridays, 4-6pm
+    office_hours: TBD
   -
     name: Lucian Li 
     email: zilul2@illinois.edu
     office: online
-    office_hours: Tuesdays and Thursdays, 5-7pm
+    office_hours: TBD
 
 course:
   name: Data Visualization
   number: IS445
-  semester: Spring 2026
-  section: OBU-OBG
+  semester: Fall 2026
+  section: BU
   location: see Canvas
   time: see Canvas
   credit_hours: 4
 urls:
   -
     name: Slack
-    url: https://is445-ob-sp26.slack.com
+    url: https://is445-bu-fa26.slack.com
   - 
     name: Canvas
-    url: https://canvas.illinois.edu/courses/64830
+    url: https://canvas.illinois.edu/courses/70829
   -
     name: Course Materials
-    url: https://uiuc-ischool-dataviz.github.io/is445_obuobg_spring2026/
+    url: https://uiuc-ischool-dataviz.github.io/is445_bu_fall2026/
   -
     name: Github
-    url: https://github.com/UIUC-iSchool-DataViz/is445_obuobg_spring2026
+    url: https://github.com/UIUC-iSchool-DataViz/is445_bu_fall2026
