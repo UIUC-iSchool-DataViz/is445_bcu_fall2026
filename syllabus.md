@@ -224,6 +224,8 @@ The breakdown of your grade will be:
 | 5%  | Quizzes: ~weekly, short questions about lecture material, graded automatically (multiple attempts are allowed, however with decreasing scores)
 | 30% | Final project: prose and code, graded by instructional team
 
+There may be some opportunities for extra credit.
+
 ### Other notes about assessments
  * Unless otherwise specified, all assignments will be completed on the [PrairieLearn platform](https://us.prairielearn.com/).
  * There will be opportunities for extra credit in the homework and final project portions.  
@@ -274,7 +276,7 @@ Late policies for labs will be: 5% off for up to 1 day late, 10% for up to 3 day
 
 Quiz late policies follow homework late policies: 10% off for up to 1 day late, 20% off for 2 days late, 30% off for 3 days late.
 
-Extra Credit assignments, and all parts of Final Project Part 3 (Part 3.1, 3.2, 3.3, 3.4, 3.5) cannot be turned in late (these are due toward the end of class so there is no "wiggle" room for late assignments).  Extra credit assignments and *all* parts of the Final Project do not have extensions.
+Extra Credit assignments, and all parts of Final Project Part 3 (Part 3.1, 3.2, 3.3, 3.4, 3.5) can be turned in a day late for 75% credit, with a 0% after 1 day (these are due toward the end of class so there is no "wiggle" room for late assignments).  Extra credit assignments and *all* parts of the Final Project do not have extensions.
 
 **NOTE that assignments may be due at different times of the week (e.g., quizzes and homeworks may be due on different days).**
 
