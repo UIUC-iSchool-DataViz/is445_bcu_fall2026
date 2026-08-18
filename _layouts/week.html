@@ -21,6 +21,14 @@ layout: default
     </div>
 </section>
 
+{%- comment -%}
+  Front matter is plain YAML -- Liquid is NOT evaluated in it.  So `link:` entries
+  in week*/index.md write the literal token REPO_URL (and COURSE_WEBPAGE) and we
+  expand them here from _config.yml, keeping the semester repo name in one place.
+{%- endcomment -%}
+{% assign course_webpage = site.url | append: site.baseurl %}
+{% assign course_github = "https://github.com/" | append: site.githuburlbase | append: site.baseurl %}
+
 {% assign subpages = site.html_pages | where: "dir", page.dir %}
 {% assign lectures = subpages | where: "layout", "lecture" | sorted: "date" %}
 {% assign assignments = subpages | where: "layout", "assignment" %}
@@ -60,12 +68,12 @@ layout: default
                   {% if example.type == "ipynb" %}
                      <a href="../nbv.html?notebook_name={{page.dir | append: example.filename | relative_url | url_encode }}">{{example.title}}</a> - (<a href="{{page.dir | append: example.filename | relative_url }}">download</a>)
 		          {% elsif example.type == "iodide" %}
-                     <a href="{{example.link }}">{{example.title}}</a>		    
+                     <a href="{{ example.link | replace: "REPO_URL", course_github | replace: "COURSE_WEBPAGE", course_webpage }}">{{example.title}}</a>		    
                   {% elsif example.type == "py" %}
                   <!--
                      <a href="{{page.dir | append: example.filename | relative_url | url_encode }}">{{example.title}}</a> 
                  -->
-                    <a href="https://github.com/UIUC-iSchool-DataViz{{site.baseurl}}/blob/main{{page.dir}}/{{example.filename}}">{{example.title}}</a> <!-- HERE -->
+                    <a href="{{ course_github }}/blob/main{{page.dir}}/{{example.filename}}">{{example.title}}</a> <!-- HERE -->
                  {% else %}
                      <a href="{{page.dir | append: example.filename | relative_url }}">{{example.title}}</a>
                    {% endif %}
@@ -84,7 +92,7 @@ layout: default
             {% endif %}
 	    {% if example.type == "iodidePast" %}
 	    <p>
-              <b>Past Notebook:</b> <a href="{{example.link }}">{{example.description}}</a>
+              <b>Past Notebook:</b> <a href="{{ example.link | replace: "REPO_URL", course_github | replace: "COURSE_WEBPAGE", course_webpage }}">{{example.description}}</a>
 	    </p>
 	    {% endif %}
 
@@ -117,7 +125,7 @@ layout: default
                     <a href="{{ "/" | append: example.week | append: "/library/" | append: example.filename | relative_url }}">{{example.title}}</a> 
 		  {% endif %}
 		  {% if example.type == "libraryExternal" %}
-                    <a href="{{example.link }}">{{example.title}}</a>
+                    <a href="{{ example.link | replace: "REPO_URL", course_github | replace: "COURSE_WEBPAGE", course_webpage }}">{{example.title}}</a>
 		  {% endif %}
                 </p>
                 <p>
@@ -150,7 +158,7 @@ layout: default
                    <a href="{{ "/" | append: example.week | append: "/data/" | append: example.filename | relative_url }}">{{example.title}}</a>
 		  {% endif %}
 		  {% if example.type == "dataLink" %}
-                   <a href="{{example.link }}">{{example.title}}</a>
+                   <a href="{{ example.link | replace: "REPO_URL", course_github | replace: "COURSE_WEBPAGE", course_webpage }}">{{example.title}}</a>
 		  {% endif %}
                 </p>
                 <p>

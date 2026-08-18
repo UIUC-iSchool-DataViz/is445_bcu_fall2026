@@ -25,8 +25,18 @@
     <li>Office Hours: {{ta.office_hours}}</li>
   </ul>
   {% endfor %}
+  {%- comment -%}
+    Links come from _data/class.yml.  Entries with id `webpage`/`github` leave
+    `url:` blank on purpose -- they are built from _config.yml so the semester
+    repo name is only written down once (in baseurl).
+  {%- endcomment -%}
+  {% assign course_webpage = site.url | append: site.baseurl %}
+  {% assign course_github = "https://github.com/" | append: site.githuburlbase | append: site.baseurl %}
   {% for url in site.data.class.urls %}
-  <li>{{url.name}}: <a href="{{url.url}}">{{url.url}}</a></li>
+  {% if url.id == "webpage" %}{% assign href = course_webpage %}
+  {% elsif url.id == "github" %}{% assign href = course_github %}
+  {% else %}{% assign href = url.url %}{% endif %}
+  <li>{{url.name}}: <a href="{{href}}">{{href}}</a></li>
   {% endfor %}
   </ul>
   </td></tr>

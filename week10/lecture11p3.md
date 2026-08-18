@@ -144,7 +144,7 @@ we talked a bit about this last week, but reminder -- you'll see now a browser V
 
 If you want to install locally:
 * Install VSCode: https://code.visualstudio.com/download
-* Install local conda environment: https://uiuc-ischool-dataviz.github.io/is445_bcubcg_fall2025/week01/installation_instructions.html
+* Install local conda environment: COURSE_WEBPAGE/week01/installation_instructions.html
 
 
 notes: 
@@ -158,7 +158,7 @@ if you want to install locally you'll have to figure out two steps
 
 If you want to install locally:
 * Install VSCode: https://code.visualstudio.com/download
-* Install local conda environment: https://uiuc-ischool-dataviz.github.io/is445_bcubcg_fall2025/week01/installation_instructions.html
+* Install local conda environment: COURSE_WEBPAGE/week01/installation_instructions.html
 
 We don't expect you to do any of this!  You can just use the VSCode workspaces provided for you on PrairieLearn.
 

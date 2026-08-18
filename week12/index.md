@@ -8,12 +8,12 @@ examples:
     type: iodide
     title: Prep Streamlit Files, Week 13
     description: In class notebook
-    link: https://github.com/UIUC-iSchool-DataViz/is445_bcubcg_fall2025/tree/main/week13/prepStreamlit
+    link: REPO_URL/tree/main/week13/prepStreamlit
   - filename: inClassStreamlit
     type: iodide
     title: In class Streamlit Files, Week 13
     description: Updating storage of Jekyll files in class
-    link: https://github.com/UIUC-iSchool-DataViz/is445_bcubcg_fall2025/tree/master/week13/inClassStreamlit
+    link: REPO_URL/tree/master/week13/inClassStreamlit
 data:
   - filename: mobility.csv
     type: dataLink

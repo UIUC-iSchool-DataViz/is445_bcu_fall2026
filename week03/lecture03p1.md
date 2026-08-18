@@ -34,13 +34,13 @@ Other:
 
 ## Where resources are be located
 
-* Canvas: https://canvas.illinois.edu/courses/64830 - where the grades and assignments links will be posted
+* Canvas: COURSE_CANVAS - where the grades and assignments links will be posted
  
-* PrairieLearn: https://us.prairielearn.com/pl/course_instance/204190/assessments - where assignments will be completed
+* PrairieLearn: COURSE_PRAIRIELEARN - where assignments will be completed
 
-* Course webpage: https://uiuc-ischool-dataviz.github.io/is445_obuobg_spring2026/ - where lecture slides, notebooks, data & general course info will live.
+* Course webpage: COURSE_WEBPAGE/ - where lecture slides, notebooks, data & general course info will live.
 
-* Slack: [https://is445-ob-sp26.slack.com/](https://join.slack.com/t/is445-ob-sp26/shared_invite/zt-3nlxwigx2-uAKm2J3UFFcPsSNZMLHr0A) (workspace name is is445-ob-sp26) - the best place to ask questions in a `#homeworkX-questions` channel 
+* Slack: [COURSE_SLACK](COURSE_SLACK_INVITE) (workspace name is COURSE_SLACK_WORKSPACE) - the best place to ask questions in a `#homeworkX-questions` channel 
    * all quiz questions on channel `#quiz-questions`
  
 notes:

@@ -40,40 +40,67 @@
               <h2>{{site.data.class.instructor.name}}</h2>
               <h2>{{site.data.class.course.name}} - {{site.data.class.course.semester}}</h2>
           </section>
-          <!--
-        <section data-markdown
-           data-separator="^\n---\n"
-           data-separator-vertical="^\n----\n">
-          <script type="text/template">
-{{page.content}}
-          </script>
-        </section>
-      -->
-        <!--
+{%- comment -%}
+  Slide bodies are handed to reveal.js as RAW markdown, which means Jekyll never
+  runs Liquid over them -- {{ site.whatever }} inside a slide stays literal text.
+  So instead we substitute ALL-CAPS placeholders here, pulling the values from
+  _data/class.yml and _config.yml.  See the header of _data/class.yml for the
+  list; to add a new one, add a `replace:` line below.
+
+  Order matters: a longer placeholder must be replaced BEFORE any shorter one
+  it starts with (COURSE_SLACK_INVITE before COURSE_SLACK, etc).
+{%- endcomment -%}
+{% assign ii = site.data.class.instructor %}
+{% assign co = site.data.class.course %}
+{% assign slack = site.data.class.urls | where: "id", "slack" | first %}
+{% assign canvas = site.data.class.urls | where: "id", "canvas" | first %}
+{% assign pl = site.data.class.urls | where: "id", "prairielearn" | first %}
+{% assign course_webpage = site.url | append: site.baseurl %}
+{% assign course_github = "https://github.com/" | append: site.githuburlbase | append: site.baseurl %}
+
+{%- capture course_staff -%}
+{{ ii.name | strip }} - `{{ ii.email | strip }}`
+ * Office Hours: {{ ii.office_hours }}
+{% for ta in site.data.class.tas %}
+TA: {{ ta.name | strip }} - `{{ ta.email | strip }}`
+ * Office Hours: {{ ta.office_hours }}
+{% endfor %}
+{%- endcapture -%}
+
+{%- capture course_tas -%}
+{% for ta in site.data.class.tas %}{{ ta.name | strip }}{% unless forloop.last %}, {% endunless %}{% endfor %}
+{%- endcapture -%}
+
 <section data-markdown
    data-separator="^\n---\n"
    data-separator-vertical="^\n----\n">
   <script type="text/template">
-{% capture slides %}
-{{ page.content }}
-{% endcapture %}
-{{ slides | replace: "PRESENTATION_TIME_PLACEHOLDER", page.presentation_time }}
-  </script>
-</section>  
--->
-<section data-markdown
-   data-separator="^\n---\n"
-   data-separator-vertical="^\n----\n">
-  <script type="text/template">
-  {% capture slides %}
-  {{ page.content }}
-  {% endcapture %}
-  {% assign processed = slides %}
-  {% for item in page %}
-    {% assign placeholder = "PAGE_" | append: item[0] | upcase %}
-    {% assign processed = processed | replace: placeholder, item[1] %}
-  {% endfor %}
-  {{ processed }}
+{%- capture slides -%}{{ page.content }}{%- endcapture -%}
+{%- assign processed = slides -%}
+{%- comment -%} per-page values from the slide deck's own front matter: PAGE_FOO <- foo: {%- endcomment -%}
+{%- for item in page -%}
+  {%- assign placeholder = "PAGE_" | append: item[0] | upcase -%}
+  {%- assign processed = processed | replace: placeholder, item[1] -%}
+{%- endfor -%}
+{%- comment -%} course-wide values from _data/class.yml + _config.yml {%- endcomment -%}
+{%- assign processed = processed
+      | replace: "COURSE_STAFF", course_staff
+      | replace: "COURSE_TAS", course_tas
+      | replace: "COURSE_WEBPAGE", course_webpage
+      | replace: "COURSE_GITHUB", course_github
+      | replace: "COURSE_PRAIRIELEARN", pl.url
+      | replace: "COURSE_SLACK_WORKSPACE", slack.workspace
+      | replace: "COURSE_SLACK_INVITE", slack.invite
+      | replace: "COURSE_SLACK", slack.url
+      | replace: "COURSE_CANVAS", canvas.url
+      | replace: "COURSE_SEMESTER", co.semester
+      | replace: "COURSE_SECTION", co.section
+      | replace: "COURSE_NUMBER", co.number
+      | replace: "COURSE_NAME", co.name
+      | replace: "INSTRUCTOR_NAME", ii.name
+      | replace: "INSTRUCTOR_EMAIL", ii.email
+      | replace: "INSTRUCTOR_OFFICE_HOURS", ii.office_hours -%}
+{{ processed }}
   </script>
 </section>
 
