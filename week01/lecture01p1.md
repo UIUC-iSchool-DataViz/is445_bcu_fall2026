@@ -33,7 +33,7 @@ Please see the statement about policies related to Emergencies/Illness on [the S
 
 <!-- JPN, update! -->
 
-~50 for this course!
+~65 for this course!
 
 **Strategies:**
  * a total of \~10 hours of office hours (Prof+TA's) every week 
@@ -64,7 +64,7 @@ COURSE_STAFF
 Course website: COURSE_WEBPAGE/
 
 
-Online -- access through Zoom Meetings.
+<!-- Online - access through Zoom Meetings. -->
 
 notes: 
 
@@ -72,7 +72,7 @@ Here are some of those hours of office hours for you.  We are still working on f
 
 So you see that we have LOTS of office hours throughout the week -- this is with the idea that folks may be in and out of class as illness/etc happens (but hopefully doesn't!)
 
-**TA's introduce themselves if they are on Zoom**
+**TA's introduce themselves if they are on Zoom/in person**
 
 Again, we want to make sure there are lots of support for folks that have questions
 
@@ -214,7 +214,7 @@ about these types of data, and how we approach visualizing them.
 
 <!-- JPN, update -->
 
-## In a breakout group (of ~4-5 people) 
+## In a group (of ~4-5 people) 
 
 Visualize the results of your group's collective "data".
 
@@ -225,7 +225,6 @@ Visualize the results of your group's collective "data".
 
 Don't forget to say hi to each other!
 
-Miro Board Link (check Zoom chat for password): https://miro.com/app/board/uXjVGMuxl6c=/?share_link_id=725801257421
 
 <!--
 Miro Board link: https://miro.com/app/board/uXjVLq47Pvc=/?share_link_id=451051165669
@@ -256,7 +255,7 @@ We have to do it!
 
 ## Syllabus
 
- * Week 1 (Today) - Introduction
+ * Week 1 - (Today) - Introduction
  * Week 2 - Data Storage and Operations
  * Week 3 - Types of Viz and Choosing Colors
  * Week 4 - Beginning interactivity
@@ -287,14 +286,16 @@ We might start getting into javascript earlier, depending on how we are doing.
 
 ## Syllabus, cont
 
- * Week 9 - Spring Break!  No class!
- * Week 10 - Viz Audience; Intro to Jekyll
- * Week 11 - More Jekyll+Altair+vega-lite things <-- Prof. Jill maybe gone, different modality
- * Week 12 - Intro to Streamlit 
- * Week 13 - Streamlit Apps in HuggingFace
- * Week 14 - A few more Streamlit+HuggingFace things; Publishing Viz
- * Week 15 - Scientific Viz & AVL Guest lecture (**partially flipped class**)
+ * Week 9 - Viz Audience; Intro to Jekyll
+<!-- * Week 10 - More Jekyll+Altair+vega-lite things <-- Prof. Jill maybe gone, different modality -->
+ * Week 10 - More Jekyll+Altair+vega-lite things 
+ * Week 11 - Intro to Streamlit 
+ * Week 12 - Streamlit Apps in HuggingFace
+ * Week 13 - A few more Streamlit+HuggingFace things; Publishing Viz
+ * Week 14 - Scientific Viz & AVL Guest lecture (**partially flipped class**)
+ * Week 15 - Fall Break!  No class!
  * Week 16 - Network Visualization & Word clouds (**flipped class**)
+ * Week 17 - Finish up final projects & a bit on PowerBI (**partially flipped class**)
 
 notes:
 Toward the end of class we are going to have a slightly more free-form set of
@@ -647,7 +648,7 @@ We will also have time in class, typically toward the end of class, for you to w
  * Graded automatically on PrairieLearn
  * Can be attempted multiple times *with decreasing scores*
  * ~10 Quizzes in the course 
- * Generally due on *Wednesdays* before class (but always double check the due dates!)
+ * Generally due on *Tuesdays* before class (but always double check the due dates!)
  
 notes:
 Quizzes are meant to be quick checks of the material covered in class
@@ -665,13 +666,13 @@ You can repeat quiz questions multiple times, however you will be peanalized for
  * Graded automatically on PrairieLearn
  * Can be attempted multiple times *with decreasing scores*
  * ~10 Quizzes in the course 
- * Generally due on *Wednesdays* before class (but always double check the due dates!)
+ * Generally due on *Tuesdays* before class (but always double check the due dates!)
 
 
  **If you see a 0% on PrairieLearn until a certain date this means you can "preview" the assignment, but should not submit it for credit (for Quizzes, this means don't open it yet!).**
  
 notes:
-There will be some assignments that say 0% before a certain date (we'll look at this when we check out our first homework assignmennt later in class)
+There will be some assignments that say 0% before a certain date (we'll look at this when we check out our first homework assignment later in class)
 
 this means you can "preview" the assignment, but you should submit it only after the 100% date 
 
@@ -686,7 +687,7 @@ don't open quizzes before the 100% date! it will start the quiz timer and you wo
 <!-- JPN come and change -->
 
 * Homeworks/Labs -- Fridays (generally)
-* Quizzes -- Wednesdays (generally)
+* Quizzes -- Tuesdays (generally)
 
 Canvas and PrairieLearn due dates *should* be in sync, but when in doubt *follow the PrairieLearn due dates*.
 

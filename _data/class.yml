@@ -76,7 +76,7 @@ urls:
     id: prairielearn
     name: PrairieLearn
     # TODO Fall 2026: still points at the Spring 2026 course instance
-    url: https://us.prairielearn.com/pl/course_instance/204190/assessments
+    url: https://us.prairielearn.com/pl/course_instance/225607/assessments
   -
     id: webpage
     name: Course Materials
