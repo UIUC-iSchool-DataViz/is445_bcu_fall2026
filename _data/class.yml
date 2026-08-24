@@ -37,13 +37,18 @@ instructor:
 # build their lists from this one.
 tas:
   -
-    name: Gaozheng Liu
+    name: GaoZheng Liu
     email: gl11@illinois.edu
     office: online
     office_hours: TBD
   -
     name: Lucian Li
     email: zilul2@illinois.edu
+    office: online
+    office_hours: TBD
+  -
+    name: Xinhui Hu
+    email: xhu15@illinois.edu
     office: online
     office_hours: TBD
 
