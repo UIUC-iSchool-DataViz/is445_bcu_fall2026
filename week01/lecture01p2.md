@@ -496,6 +496,16 @@ Each of these bar chart examples are meant to show the same data. But you can se
 
 ---
 
+## Extra Credit Opportunity!
+
+Which of these graphs is the most accurate representation of the data?
+
+notes:
+**go to the qrcode and url for Q2!**
+
+---
+
+
 <!-- .slide: data-background-image="images/gunDeaths.jpg" data-background-size="contain" -->
 
 notes:

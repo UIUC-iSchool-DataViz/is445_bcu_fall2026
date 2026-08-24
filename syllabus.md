@@ -224,7 +224,7 @@ The breakdown of your grade will be:
 | 5%  | Quizzes: ~weekly, short questions about lecture material, graded automatically (multiple attempts are allowed, however with decreasing scores)
 | 30% | Final project: prose and code, graded by instructional team
 
-There may be some opportunities for extra credit.
+There may be some opportunities for extra credit (see lecture slides for more on this).
 
 ### Other notes about assessments
  * Unless otherwise specified, all assignments will be completed on the [PrairieLearn platform](https://us.prairielearn.com/).
