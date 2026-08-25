@@ -18,7 +18,12 @@
                 <div class="navbar-start">
                     {% assign menuitems = site.data.menuitems | sort:"weight" %}
                     {% for menuitem in menuitems %}
-                    <a href="{{ menuitem.url | relative_url }}" class="navbar-item">
+                    {% assign menuitem_url = menuitem.url %}
+                    {% if menuitem.id %}
+                        {% assign class_url = site.data.class.urls | where: "id", menuitem.id | first %}
+                        {% assign menuitem_url = class_url.url %}
+                    {% endif %}
+                    <a href="{{ menuitem_url | relative_url }}" class="navbar-item">
                         <span class="icon is-large">
                             <i class="{{menuitem.facollection | default: 'fas' }} {{menuitem.faicon}}"></i>
                         </span>
