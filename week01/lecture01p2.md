@@ -552,7 +552,7 @@ Also under each "more about" link some [fun examples of AI popular media posts](
 notes:
 there are updates with AI-generated materials as examples of how far we can take these things
 
-although, at least in this example, the fake academic article isn't super believable
+although, at least in this example, the fake academic article isn't super believable (for now!)
 
 ---
 
