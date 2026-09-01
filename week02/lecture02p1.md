@@ -16,16 +16,24 @@ date: 2025-09-08
 
 ## How to get help
 
-Jill P. Naiman - `jnaiman@illinois.edu`
- * Office Hours: Thursdays 12:30-2pm (online)
-
-TA: Lucian Li - `zilul2@illinois.edu`
- * Office Hours: Tuesdays and Thursdays, 5-7pm (online)
-
-TA: Gaozheng Liu - `gl11@illinois.edu`
- * Office Hours:  Mondays and Fridays, 4-6pm (online)
+COURSE_STAFF
 
 See Zoom Meeting Room on Canvas to access meeting links.
+
+
+ 
+Other: 
+ * Slack, email
+
+---
+
+## How to get help
+
+COURSE_STAFF
+
+See Zoom Meeting Room on Canvas to access meeting links.
+
+**My OH has to start a little later, but will see if I can't get there closer to 10:15am!**
 
  
 Other: 
@@ -66,6 +74,30 @@ notes:
 part of the syllabus quiz will be checking out the HW policies in more detail -- we will drop the lowest HW score, however there 
 are several assignments you must submit and get above a certain grade on to pass the class -- these are installation assignments 
 and those that are considered "preparatory" for the final project
+
+---
+
+## Opportunities for Extra Credit
+
+ * in the Homework category (toward the end of class)
+ * for the Final Project
+ * for in class participation (up to 3% of total grade) 
+   * through QR-code "check in" surveys
+   * short answers on paper (please bring pen or pencil!)
+   * short Canvas/PrairieLearn assessments
+   * sign-in with i-Card (so be sure to bring this to class as well!)
+   * others, and combinations of the above
+
+**NO** i-Clicker required for this course.
+
+**Doing in class-only assignments outside of class is an academic integrity violation, i.e. you'll get a FAIR (even if you do the assessment in class and then leave early/come in late without notifying the instructor).**
+
+**You can get a good grade in the course without any extra credit.**
+
+
+notes:
+
+again, this is just **extra credit** -- you can still get a good grade in the course without doing the extra credit, the course is designed this way -- so please do not "fake" being in class when you are not -- nobody wants to go through the FAIR process!
 
 ---
 
@@ -160,6 +192,13 @@ notes:
 today we're going to get some practice with the practicalities of dealing with data
 
 We'll talk a bit about the kinds of data that are out there and their definitions, and how many people disagree on these definitions!
+
+---
+
+## But first!  Let's revisit the histogram question from last time
+
+notes:
+**go to google doc**
 
 ---
 
