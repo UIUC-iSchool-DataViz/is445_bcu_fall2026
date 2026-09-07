@@ -53,6 +53,26 @@ last week we covered the data management and practical programming aspects of da
 
 ---
 
+## Things we'd like to know more about
+
+Some themes:
+* more about plotting with matplotlib
+* more about plotting with other kinds of libraries 
+* what kinds of plots should we use? how to choose colors, markers, etc.?
+
+notes:
+thanks again for those that participated in the EC stuff last week!  here are some takeaways
+
+there are definitely more than I put up here, but I noticed a few themes to touch base about
+
+1. wanting to make more plots with matplotlib -- have no fear! we will do more of this in the coming weeks
+
+2. wanting to make plots with other libraries beyond matplotlib -- also have no fear! we'll explore that with bqplot for interactivity in a few weeks, and then streamlit and altair when we are building for the web.  We won't have time to cover ALL of the Python-based plotting libraries (like plotly, seaborn, folium, etc) since this is just an intro, but the idea is that after the course you'll have enough of a baseline to know what you're looking for and how to get started with a new package
+
+3. there where questions about how to know what is the "right" plot for a specific type of data and how to choose things like what colors, markers, etc -- we'll cover this in the coming weeks as well (starting today with color and general perception channels), but also when we get closer to the end of class and start thinking about the *audience* for your visualizations, because sometimes, based on what your audience *already knows* the answer to "what is best" will change
+
+---
+
 ## Today
 
 <img src="images/data_viz_diagram_week3.png">
