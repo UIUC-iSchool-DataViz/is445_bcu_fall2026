@@ -337,6 +337,7 @@ which was the easiest one to do of these 3 images?
 
 we can make thinks more/less complex with this game (that is part of your optional reading for this week)
 
+**go through the javascript thing here!**
 
 ---
 
