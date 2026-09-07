@@ -45,7 +45,7 @@ Note there are a variety of notebooks from previous iterations of this course li
  * <a href="http://jonathansoma.com/lede/algorithms-2017/classes/fuzziness-matplotlib/understand-df-plot-in-pandas/">Pandas vs. Matplotlib</a>
  * <a href="https://github.com/jnaiman/IS-452AO-Fall2019/blob/master/Lectures/Week-09-Dictionaries.ipynb">IS452's Dictionary week</a>
  * Colors: <a href="https://www.rapidtables.com/web/color/RGB_Color.html">RGB color triplets</a>
- * While we won't be using <a href="https://wholetale.org/">Whole Tale</a> for this lecture, it was used for the last iteration of this course and you should feel free to go through the code walk-throughs presented there by Matt Turk - just search for "IS590" under the <a href="https://dashboard.wholetale.org/browse">Browse Tales</a> header.
+ * While we won't be using <a href="https://wholetale.org/">Whole Tale</a> for this lecture, it was used for the last iteration of this course see some of the examples on the <a href="https://wholetale.org/#featured">Whole Tale Explore</a> page.
 
 ## Optional Reading List
 
