@@ -16,14 +16,7 @@ date: 2026-02--4
 
 ## How to get help
 
-Jill P. Naiman - `jnaiman@illinois.edu`
- * Office Hours: Thursdays 12:30-2pm (online)
-
-TA: Lucian Li - `zilul2@illinois.edu`
- * Office Hours: Tuesdays and Thursdays, 5-7pm (online)
-
-TA: Gaozheng Liu - `gl11@illinois.edu`
- * Office Hours:  Mondays and Fridays, 4-6pm (online)
+COURSE_STAFF
 
 See Zoom Meeting Room on Canvas to access meeting links.
  
