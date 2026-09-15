@@ -52,7 +52,7 @@ Using Altair create interactive visualizations in Python and an introduction to 
 1. <a href="https://vega.github.io/vega-lite/docs/">vega-lite docs</a> 
 2. <a href="https://altair-viz.github.io/gallery/index.html">Altair docs</a> - in particular <a href="https://altair-viz.github.io/user_guide/encodings/index.html#encoding-data-types">Encoding Data Types</a>, <a href="https://altair-viz.github.io/user_guide/internals.html#converting-vega-lite-to-altair">Vegalite-Altair conversions</a>, <a href="https://altair-viz.github.io/user_guide/transform/bin.html#bin-transforms">Binning</a>, <a href="https://altair-viz.github.io/user_guide/transform/filter.html">Filter transforms</a> and <a href="https://altair-viz.github.io/gallery/interactive_cross_highlight.html#interactive-chart-with-cross-highlight">interactive examples</a>
 3. <a href="https://clauswilke.com/dataviz/directory-of-visualizations.html">FDV, Ch. 5: Directory of visualizations</a>
-
+4. <a href="https://www.data-to-viz.com/">Data to Viz Flowchart</a>
  
 ## Extra Resources
  * [FiveThirtyEight datasets](https://github.com/fivethirtyeight/data)
