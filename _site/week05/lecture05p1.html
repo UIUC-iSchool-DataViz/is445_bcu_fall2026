@@ -66,6 +66,20 @@ last week we started linking together some visual encodings and programming conc
 
 ---
 
+## Things we'd like to know more about
+
+1. More about widgets
+  * How many can we connect at once? 
+  * How can we use them to make interactive plots?
+2. Parts of coding that went by a bit fast/want to review what we went over in class again
+
+notes:
+For more about widgets, you're in luck!  You'll get more practice in Homework 3, but we will also be using widgets and widget-like objects today when building some dashboards with our next plotting engine bqplot (and more when we get to online platforms and vega-lite later in class)
+
+For "want to review materials" -- go over where the videos are on Canvas, also can always preview prep notebooks
+
+---
+
 ## Where we are: This week
 
 <img src="images/data_viz_diagram_week05.png" alt="Mind-map of what we will cover this week, with an emphasis on Grammar of Graphics and the visualization engine 'bqplot'.">
@@ -74,6 +88,9 @@ notes:
 today we'll cover a new viz engine called bqplot (we've been using matplotlib as our main viz engine up until this point)
 
 we'll also cover some concepts of grammar of graphics which is a way that many web-based viz engines are layed out
+
+
+
 
 ---
 
@@ -141,6 +158,11 @@ see the pinned comment in our Slack #general channel for more details, but basic
 
 we are working to find another solution, but don't hesitate to pop by my office hours or the TA's office hours for help with how to do this!
 
+---
+
+## Quick note about extra credit
+
+Still working on implementation of scaling in Canvas so the points work out -- stay tuned!
 
 ---
 
@@ -340,7 +362,7 @@ bplt.show()
 ```#python
 scatter_chart = Scatter(x=x_data, y=y_data, scales={'x': x_sc, 'y': y_sc})
 fig = Figure(marks=[scatter_chart], title='A Figure', axes=[x_ax, y_ax])
-display(fig)
+fig # to display figure
 ```
 
 notes:
