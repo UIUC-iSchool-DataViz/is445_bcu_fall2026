@@ -41,6 +41,12 @@ For "want to review materials" -- go over where the videos are on Canvas, also c
 
 ---
 
+## What do we do with these cards?
+
+Please take notes!  Especially make note of questions that you have, or ideas that come to you during the class of things you want to explore more.
+
+---
+
 ## Where we are: This week
 
 <img src="images/data_viz_diagram_week05.png" alt="Mind-map of what we will cover this week, with an emphasis on Grammar of Graphics and the visualization engine 'bqplot'.">
