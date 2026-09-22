@@ -45,6 +45,15 @@ For "want to review materials" -- go over where the videos are on Canvas, also c
 
 Please take notes!  Especially make note of questions that you have, or ideas that come to you during the class of things you want to explore more.
 
+
+---
+
+## What do we do with these cards?
+
+Please take notes!  Especially make note of questions that you have, or ideas that come to you during the class of things you want to explore more.
+
+**Don’t forget to write your name and NetID (letters+numbers before the @illinois.edu in email)**
+
 ---
 
 ## Where we are: This week
