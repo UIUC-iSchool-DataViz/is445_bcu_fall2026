@@ -22,6 +22,15 @@ These are typically processed the day after the Homework is due (typically Monda
 
 ---
 
+## Due date mistakes
+
+A few later assignments are going to move around.
+
+notes:
+sorry for the mixup!  mostly quiz due dates changing but due dates got mixed up and just figured it out last night :|
+
+---
+
 ## Where we are: Last week
 
 <img src="images/dataviz_map_lastweek_take2.png" alt="A 'mind map' of last week's topics including introducing grammar of graphics and beginning interactivity.">
