@@ -22,6 +22,12 @@ These are typically processed the day after the Homework is due (typically Monda
 
 ---
 
+## Quick note about Extra Credit
+
+Category up, but won't be factored into your final grade until end of class because of Canvas weirdness.
+
+---
+
 ## Due date mistakes
 
 A few later assignments are going to move around.
