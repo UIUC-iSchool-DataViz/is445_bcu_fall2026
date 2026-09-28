@@ -22,7 +22,7 @@ data:
     link: https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_data/main/mobility.csv
 ---
 
-# More web dev with Altair and Jekyll
+# Guest Lecture from NCSA AVL on SciViz & More web dev with Altair and Jekyll
 
 We talk a little bit about publishing and add in some Altair in Python/Jekyll.
 

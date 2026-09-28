@@ -33,7 +33,7 @@ data:
 
 ---
 
-# Guest Lecture from NCSA AVL on SciViz & More with Streamlit/Jekyll
+# More with Streamlit/Jekyll
 
 We do a few more things with Streamlit and Jekyll.
 
