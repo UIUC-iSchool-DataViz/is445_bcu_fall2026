@@ -13,19 +13,23 @@ go over where this is!
 
 ---
 
-# Change of modality for class on 4/1
-
-notes:
-away! talk about what will go on
-
----
-
 ## Last Week
 
 <img src="images/week08_weekbefore.png" alt="Mind map of concepts covered in class up to last week.">
 
 notes:
 last week we discussed maps and mappable data
+
+---
+
+## Things we'd like to know more about
+
+1. How to get my own data into maps?
+2. How to make more `bqplot`-looking graphs (i.e. more interactivity?)
+
+notes:
+1. there are some examples in the extra prep notebooks
+2. there are some examples of bqplot-maps in the extra prep notebooks, BUT we will also do some (probably easier) maps with vega-lite and Altair, so stay tuned!
 
 ---
 
@@ -38,7 +42,7 @@ this week we'll start working toward some tools we'll use to start hosting some 
 
 Luckily, will all of our usage of bqplot and grammar of graphics we are well equipt to do this!
 
-in previous iterations of the class we used online notebook hosts called Iodide or Starboard to do this, but it is no longer supported so we are going to use a different method called ~~Starboard~~ Streamlit which we'll then host on Huggingface.
+in previous iterations of the class we used online notebook hosts called Iodide or Starboard to do this, but it is no longer supported so we are going to use a different method called ~~Starboard~~ Streamlit which we'll then host on ~~Huggingface~~ Streamlit.io.
 
 I've kept some of the links to old Iodide/Starboard prep notebooks in the extended resources in case you are curious, but it will be very similar to stuff we will be doing using ~~Starboard~~ Streamlit
 
