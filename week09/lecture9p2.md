@@ -70,7 +70,7 @@ notes:
 
 Jekyll is a [static site generator](https://www.cloudflare.com/learning/performance/static-site-generator/)
 
- * Reduce manual coding for webpages with repeated content [see static site source code for class webpage](https://github.com/UIUC-iSchool-DataViz/is445_bcubcg_fall2022)
+ * Reduce manual coding for webpages with repeated content [see static site source code for class webpage](https://github.com/UIUC-iSchool-DataViz/is445_bcu_fall2026)
  
 </div>
 <div class="right">

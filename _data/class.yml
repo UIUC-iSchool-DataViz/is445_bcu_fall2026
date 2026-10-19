@@ -24,6 +24,8 @@
 #       COURSE_STAFF    (instructor + all TAs w/ office hours, as a markdown list)
 #       COURSE_TAS      (comma-separated list of TA names)
 #       INSTRUCTOR_NAME INSTRUCTOR_EMAIL INSTRUCTOR_OFFICE_HOURS
+#       DUE_FINAL_SIGNUP DUE_FINAL_PART1 DUE_FINAL_PART2 DUE_FINAL_PART3
+#                       (final project due dates, from `due_dates:` below)
 #     To add a new placeholder, add one `replace:` line in _layouts/lecture.html.
 # ============================================================================
 
@@ -51,6 +53,16 @@ tas:
     email: xhu15@illinois.edu
     office: online
     office_hours: Mondays & Fridays, 9:30-11:30am
+
+# Class-wide due dates.  Only the lecture slides use these (via the DUE_*
+# placeholders above) -- they are deliberately not shown on any other page.
+# TODO Fall 2026: these are still the Spring dates.
+# note: When you add the Part 3 placeholders, a name that is the start of a longer one has to be replaced after the longer one. For example, DUE_FINAL_PART3_FEEDBACK must be replaced before DUE_FINAL_PART3, the same as COURSE_SLACK_INVITE before COURSE_SLACK
+due_dates:
+  final_signup: Nov 6    # final project group sign-up closes
+  final_part1: Nov 17     # Part 1: Viz for Self (individual)
+  final_part2: Dec 1     # Part 2: Viz for Peers (group)
+  final_part3: Dec 4 (for feedback), Dec 15 (final)   # Part 3: Viz for Others
 
 course:
   name: Data Visualization

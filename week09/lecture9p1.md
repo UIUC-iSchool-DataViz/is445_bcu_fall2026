@@ -35,13 +35,13 @@ There are three components, turned in the last three weeks of class.
 
 You will have three general components:
 
-1. Viz for Self (Due Apr 17 - individual)
-1. Viz for Peers (Due Apr 25 - group)
-1. Viz for Others (Due Apr 29 (for feedback), May 8 (final) - part group/part individual)
+1. Viz for Self (Due DUE_FINAL_PART1 - individual)
+1. Viz for Peers (Due DUE_FINAL_PART2 - group)
+1. Viz for Others (Due DUE_FINAL_PART3 - part group/part individual)
 
 Be aware:
  * **NO** extensions for these assignments.
- * There is a group-submission option (sign up open, closes April 15!).
+ * There is a group-submission option (sign up open, closes DUE_FINAL_SIGNUP!).
 
 note:
 just some reminders about the final project
@@ -61,7 +61,7 @@ also, parts 2 & 3 will be in a group, however you will pick your own groups AND 
 * Ask group members before you join a group!
 * Sign up on Canvas under `People` $\rightarrow$ `Groups`
 * Want to find a group?  Check out the **`#find-a-final-project-group`** channel on Slack 
-* **Group sign-up closes April 15**
+* **Group sign-up closes DUE_FINAL_SIGNUP**
 
 
 ---

@@ -52,6 +52,7 @@
   it starts with (COURSE_SLACK_INVITE before COURSE_SLACK, etc).
 {%- endcomment -%}
 {% assign ii = site.data.class.instructor %}
+{% assign due = site.data.class.due_dates %}
 {% assign co = site.data.class.course %}
 {% assign slack = site.data.class.urls | where: "id", "slack" | first %}
 {% assign canvas = site.data.class.urls | where: "id", "canvas" | first %}
@@ -100,7 +101,11 @@ TA: {{ ta.name | strip }} - `{{ ta.email | strip }}`
       | replace: "COURSE_NAME", co.name
       | replace: "INSTRUCTOR_NAME", ii.name
       | replace: "INSTRUCTOR_EMAIL", ii.email
-      | replace: "INSTRUCTOR_OFFICE_HOURS", ii.office_hours -%}
+      | replace: "INSTRUCTOR_OFFICE_HOURS", ii.office_hours
+      | replace: "DUE_FINAL_SIGNUP", due.final_signup
+      | replace: "DUE_FINAL_PART1", due.final_part1
+      | replace: "DUE_FINAL_PART2", due.final_part2
+      | replace: "DUE_FINAL_PART3", due.final_part3 -%}
 {{ processed }}
   </script>
 </section>

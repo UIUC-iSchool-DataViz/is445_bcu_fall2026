@@ -25,9 +25,9 @@ There are three components, turned in the last three weeks of class.
 
 You will have three general components:
 
-1. Viz for Self (Due Apr 17 - individual)
-1. Viz for Peers (Due Apr 25 - group)
-1. Viz for Others (Due Apr 29 (for feedback), May 8 (final) - part group/part individual)
+1. Viz for Self (Due DUE_FINAL_PART1 - individual)
+1. Viz for Peers (Due DUE_FINAL_PART2 - group)
+1. Viz for Others (Due DUE_FINAL_PART3 - part group/part individual)
 
 Be aware:
  * **NO** extensions for these assignments.
