@@ -7,17 +7,10 @@ date: 2025-10-27
 
 ---
 
-## Reminder \#1: "Temperature Taking" Survey!
+## Reminder: "Temperature Taking" Survey!
 
 notes:
 **show where this is**
-
----
-
-## Reminder \#2: Prof. Jill Traveling this week/next
-
-* Prof. Office Hours canceled this/next week (but ping on Slack in assignment-question channel!)
-* Next week modality: pre-recorded material and "extra" TA Office Hours
 
 ---
 
@@ -164,10 +157,13 @@ website.
 
 Some possible ways to approach this:
 
- * Jekyll+Altair (see template)
- * Raw HTML + Javascript
- * ~~Starboard website~~ Streamlit app
+ * Jekyll+Altair (see template, Lab 6)
+ * ~~Starboard website~~ Streamlit app (see template/Lab 8)
  * We will *not* be accepting jupyter notebooks/mybinder links this semester
 
 
+notes:
+
+for instructor, used to have but took out:
+ * Raw HTML + Javascript
 
