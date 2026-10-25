@@ -47,14 +47,6 @@ also, parts 2 & 3 will be in a group, however you will pick your own groups AND 
 
 ---
 
-## Prof. Naiman gone this week
-
-* we *will* have class -- two of our TA's (Lucian & Gaozheng) will have office hours in class
-* videos for what we would cover are uploaded (see "Week 11 Page" under Canvas Module for this week)
-* my Office Hours are canceled this week
-
----
-
 ## To turn on blogs on Jekyll
 
 ![Screenshot of the _config.yml file from the template in the emacs text editor showing where to comment out if you want to include blogs on your webpage.](images/commentOutBlog.png)
