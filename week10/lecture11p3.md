@@ -1,8 +1,8 @@
 ---
-title: Lecture 10.3 - Streamlit & HuggingFace Introduction; VSCode
+title: Lecture 10.3 - Streamlit & Streamlit.io Introduction; VSCode
 layout: lecture
 description: >-
- Streamlit, HuggingFace, VSCode ecosystem
+ Streamlit, Streamlit.io, VSCode ecosystem
 date: 2025-11-03
 
 ---
@@ -40,7 +40,7 @@ just some reminders for what we worked on last time -- mostly with altair and ma
 
 ---
 
-## Altair in Streamlit (in HuggingFace & Jekyll)
+## Altair in Streamlit (in Streamlit.io & Jekyll)
 
 ```javascript
 
@@ -73,7 +73,9 @@ How can we share our creations with the public?
 notes:
 so we can make some cool things but how can we share them with our audience?
 
-we'll discuss how to do this with Streamlit (and later Jekyll)
+we started thinking a bit about this last time
+
+we'll discuss how to do this with Streamlit (and later Jekyll) in more detail today
 
 ---
 
@@ -85,6 +87,10 @@ we'll discuss how to do this with Streamlit (and later Jekyll)
 
 notes:
 where we see a simple example from the video linked above showing how Markdown as a string in Python is translated into headers and text on a page.
+
+---
+
+## Streamlit.io
 
 ---
 
