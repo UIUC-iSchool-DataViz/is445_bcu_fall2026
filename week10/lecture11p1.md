@@ -73,3 +73,8 @@ notes:
 We will talk more about HW5 later in class!
 
 **point this out!**
+
+---
+
+# NO Graded In Class items next week
+
