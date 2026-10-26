@@ -94,7 +94,7 @@ where we see a simple example from the video linked above showing how Markdown a
 
 [Streamlit.io](https://streamlit.io/) is the platform we'll be using to host our interactive apps.
 
-![Screenshot of the landing page of the Streamlit.io platform](images/streamlitio/streamlitiointro.png)
+<img src="images/streamlitio/streamlitiointro.png" style="border: 2px solid black; padding: 4px;" alt="Screenshot of the landing page of the Streamlit.io platform">
 
 notes:
 Lab 8 is where you install a template, using the GitHub account you set up in Lab 4 (and also used in Lab 8)
@@ -135,14 +135,14 @@ notes:
 
 We'll be using a new interface on PrairieLearn to develop code: VSCode
 
-![](images/vscode_view.png)
+<img src="images/vscode/vscode_view.png" style="border: 2px solid black; padding: 4px;" alt="Screenshot a VSCode instance on PrairieLearn.">
 
 ---
 
 ## VSCode to develop apps
 
-![](images/vscode_link.png)
 
+<img src="images/vscode/vscode_link.png" style="border: 2px solid black; padding: 4px;" alt="Screenshot a zoom-in of the PrairieLearn platform as listed as a link on the main Assessments tab.">
 
 notes: 
 we talked a bit about this last week, but reminder -- you'll see now a browser VSCode workspace option for in class activities
@@ -151,7 +151,7 @@ we talked a bit about this last week, but reminder -- you'll see now a browser V
 
 ## VSCode to develop apps
 
-![](images/vscode_link.png)
+<img src="images/vscode/vscode_link.png" style="border: 2px solid black; padding: 4px;" alt="Screenshot a zoom-in of the PrairieLearn platform as listed as a link on the main Assessments tab.">
 
 If you want to install locally:
 * Install VSCode: https://code.visualstudio.com/download
@@ -165,7 +165,7 @@ if you want to install locally you'll have to figure out two steps
 
 ## VSCode to develop apps
 
-![](images/vscode_link.png)
+<img src="images/vscode/vscode_link.png" style="border: 2px solid black; padding: 4px;" alt="Screenshot a zoom-in of the PrairieLearn platform as listed as a link on the main Assessments tab.">
 
 If you want to install locally:
 * Install VSCode: https://code.visualstudio.com/download
