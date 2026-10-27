@@ -6,15 +6,15 @@ notitle: true
 examples:
   - filename: inClass_week10.ipynb
     type: ipynb
-    title: In Class Notebook, Week 09
+    title: In Class Notebook, Week 9
     description: In Class Notebook
   - filename: prep_notebook_week10.ipynb
     type: ipynb
-    title: Prep Notebook, Week 09
+    title: Prep Notebook, Week 9
     description: Prep notebook for this week
   - filename: prep_notebook_week10_extras.ipynb
     type: ipynb
-    title: Extra prep Notebook, Week 09
+    title: Extra prep Notebook, Week 9
     description: Prep notebook for geospatial Corgi data
 data:
   - filename: building_inventory.csv
