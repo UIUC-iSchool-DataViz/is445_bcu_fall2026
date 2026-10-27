@@ -6,29 +6,29 @@ notitle: true
 examples:
   - filename: inClass_week11.ipynb
     type: ipynb
-    title: In class notebook, Week 11
+    title: In class notebook, Week 10
     description: In class notebook
   - filename: prep_notebook_week11.ipynb
     type: ipynb
-    title: Prep notebook, Week 11
+    title: Prep notebook, Week 10
     description: In class notebook
   - filename: prepJekyll
     type: iodide
-    title: Prep Jekyll Files, Week 11
+    title: Prep Jekyll Files, Week 10
     description: In class notebook
     link: REPO_URL/tree/main/week10/prepJekyll
   - filename: inClassJekyll
     type: iodide
-    title: In class Jekyll Files, Week 11
+    title: In class Jekyll Files, Week 10
     description: Updating storage of Jekyll files in class
     link: REPO_URL/tree/main/week10/inClassJekyll
   - filename: prep_script_week10.py
     type: py
-    title: Prep script file, Week 11
+    title: Prep script file, Week 10
     description: In class notebook
   - filename: inClass_script_week10.py
     type: py
-    title: In class script file, Week 11
+    title: In class script file, Week 10
     description: In class notebook
   - filename: prep_notebook_week09_fall2022
     type: iodidePast

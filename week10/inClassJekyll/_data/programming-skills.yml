@@ -1,0 +1,19 @@
+- name: HTML5/CSS3
+  percentage: 50
+  level: Expert
+  color: danger
+
+- name: Go
+  percentage: 5
+  level: Beginner
+  color: success
+
+- name: Python
+  percentage: 90
+  level: Expert
+  color: secondary
+
+- name: PyTorch
+  percentage: 80
+  level: Intermediate 
+  color: secondary
