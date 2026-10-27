@@ -9,3 +9,6 @@ st.subheader('This is a subheader')
 st.text('This is some simple text')
 
 st.header('Layout elements')
+col1, col2 = st.columns(2)
+col1.write('Column 1')
+col2.write('Column 2')
