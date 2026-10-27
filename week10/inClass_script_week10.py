@@ -1,3 +1,6 @@
 # To access this in near-real time try: https://github.com/UIUC-iSchool-DataViz/is445_bcu_fall2026/blob/main/week10/inClass_script_week10.py
 
 # we will often times use an app.py instead of a workbook so here is just a placeholder for that kind of file as well!
+import streamlit as st
+
+st.title('This is my fancy app!')
