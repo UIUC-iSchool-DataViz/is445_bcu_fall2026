@@ -17,6 +17,8 @@ This will explore different ways of doing the same plot with different plot size
 
 ## Using the dataframe in the plot
 
+<vegachart schema-url="{{ site.baseurl }}/assets/json/altair_mobility_dataframe.json" style="width: 100%"></vegachart>
+
 <!-- 
 <vegachart schema-url="{{ site.baseurl }}/assets/json/simpleLines.json" style="width: 100%"></vegachart>
 -->
