@@ -23,6 +23,9 @@ This will explore different ways of doing the same plot with different plot size
 
 <vegachart schema-url="{{ site.baseurl }}/assets/json/altair_mobility_url.json" style="width: 100%"></vegachart>
 
+## Using dataframe subset
+
+<vegachart schema-url="{{ site.baseurl }}/assets/json/altair_mobility_subset.json" style="width: 100%"></vegachart>
 
 
 <!-- these are written in a combo of html and liquid --> 
