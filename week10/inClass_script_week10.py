@@ -6,3 +6,4 @@ import streamlit as st
 st.title('This is my fancy app!')
 st.header('This is a header')
 st.subheader('This is a subheader')
+st.text('This is some simple text')
