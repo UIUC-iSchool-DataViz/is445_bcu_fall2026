@@ -13,7 +13,7 @@ custom_js:
 
 # In class -- Week 10
 
-Adding in a simple lines plot with some dropdown interactivity.
+This will explore different ways of doing the same plot with different plot sizes.
 
 <!-- 
 <vegachart schema-url="{{ site.baseurl }}/assets/json/simpleLines.json" style="width: 100%"></vegachart>
