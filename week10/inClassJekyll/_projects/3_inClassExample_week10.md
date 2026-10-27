@@ -11,12 +11,13 @@ custom_js:
 ---
 
 
-# In class
+# In class -- Week 10
 
 Adding in a simple lines plot with some dropdown interactivity.
 
+<!-- 
 <vegachart schema-url="{{ site.baseurl }}/assets/json/simpleLines.json" style="width: 100%"></vegachart>
-
+-->
 
 
 <!-- these are written in a combo of html and liquid --> 
