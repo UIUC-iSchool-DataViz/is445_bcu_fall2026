@@ -15,6 +15,8 @@ custom_js:
 
 This will explore different ways of doing the same plot with different plot sizes.
 
+## Using the dataframe in the plot
+
 <!-- 
 <vegachart schema-url="{{ site.baseurl }}/assets/json/simpleLines.json" style="width: 100%"></vegachart>
 -->
