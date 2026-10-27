@@ -27,6 +27,6 @@ This will explore different ways of doing the same plot with different plot size
 </div>
 
 <div class="right">
-{% include elements/button.html link="https://github.com/UIUC-iSchool-DataViz/is445_bcu_fall2026/blob/main/week09/inClass_week10.ipynb" text="The Analysis" %}
+{% include elements/button.html link="https://github.com/UIUC-iSchool-DataViz/is445_bcu_fall2026/blob/main/week10/inClass_week11.ipynb" text="The Analysis" %}
 </div>
 
