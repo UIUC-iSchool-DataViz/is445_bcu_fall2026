@@ -1,8 +1,8 @@
 ---
-name: In Class Notebook
+name: Week 10 In Class
 tools: [Python, HTML, vega-lite, Altair]
 image: assets/pngs/lineplot.png
-description: More Altair examples
+description: Altair and Data Sizes
 custom_js:
   - vega.min
   - vega-lite.min
