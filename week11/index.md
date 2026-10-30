@@ -22,9 +22,9 @@ data:
     link: https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_data/main/mobility.csv
 ---
 
-# Web dev with Streamlit + HuggingFace
+# Web dev with Streamlit + Streamlit.io
 
-Today we'll cover a brief intro of [Streamlit](https://streamlit.io/) on [HuggingFace Spaces](https://huggingface.co/docs/hub/en/spaces-sdks-streamlit)and web development in general.
+Today we'll cover a brief intro of [Streamlit](https://streamlit.io/) on [Streamlit Community Cloud](https://streamlit.io/cloud) and web development in general.
 
  
 ## Extra files
