@@ -22,9 +22,9 @@ data:
     link: https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_data/main/mobility.csv
 ---
 
-# Guest Lecture from NCSA AVL on SciViz & More web dev with Altair and Jekyll
+# Guest Lecture from NCSA AVL on SciViz & More web dev with Altair and Streamlit
 
-We talk a little bit about publishing and add in some Altair in Python/Jekyll.
+We talk a little bit about publishing and add in some Altair in Python/Streamlit.
 
 ## Extra files
 
@@ -35,6 +35,5 @@ Full corgi dataset available [here](corg/corgiData_countries_full_2020.json).
 ## Optional reading list
 
 1. <a href="https://streamlit.io/">Streamlit docs</a> - in particular <a href="https://docs.streamlit.io/develop/api-reference/charts/st.pyplot">matplotlib plots</a>
-2. <a href="https://huggingface.co/docs/hub/en/spaces-sdks-streamlit">Streamlit on HuggingFace</a> 
+2. <a href="https://streamlit.io/cloud">Streamlit Community Cloud</a> 
 3. <a href="https://altair-viz.github.io/gallery/index.html">Altair Docs</a> - in particular <a href="https://altair-viz.github.io/user_guide/data.html#including-index-data">Including Indexes</a>, <a href="https://altair-viz.github.io/altair-tutorial/notebooks/06-Selections.html">Interactivity & Selections</a>, <a href="https://altair-viz.github.io/gallery/multiline_tooltip.html#multi-line-tooltip">Multi-line tooltips</a>, <a href="https://altair-viz.github.io/user_guide/interactions/bindings_widgets.html#bindings-widgets">Interactive Binning</a>, <a href="https://altair-viz.github.io/user_guide/transform/filter.html#filter-transform">Filter Transformations</a> 
-4. <a href="https://medium.com/@imanuelyosi/deploy-your-streamlit-web-app-using-hugging-face-7b9cddb11148">This blog post for a walkthrough of deploying a Streamlit space on HuggingFace</a>

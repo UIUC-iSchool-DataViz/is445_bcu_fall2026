@@ -44,6 +44,9 @@ Also, here is a slightly more in-depth explanation of path/ray tracing:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/frLwRLS_ZR0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+1. <a href="https://streamlit.io/">Streamlit docs</a> - in particular <a href="https://docs.streamlit.io/develop/api-reference/charts/st.pyplot">matplotlib plots</a>
+2. <a href="https://streamlit.io/cloud">Streamlit Community Cloud</a> 
+3. <a href="https://altair-viz.github.io/gallery/index.html">Altair Docs</a> - in particular <a href="https://altair-viz.github.io/user_guide/data.html#including-index-data">Including Indexes</a>, <a href="https://altair-viz.github.io/altair-tutorial/notebooks/06-Selections.html">Interactivity & Selections</a>, <a href="https://altair-viz.github.io/gallery/multiline_tooltip.html#multi-line-tooltip">Multi-line tooltips</a>, <a href="https://altair-viz.github.io/user_guide/interactions/bindings_widgets.html#bindings-widgets">Interactive Binning</a>, <a href="https://altair-viz.github.io/user_guide/transform/filter.html#filter-transform">Filter Transformations</a> 
 
 <!--
 ## Extra files
@@ -52,10 +55,11 @@ Full corgi dataset available [here](corg/corgiData_countries_full_2020.json).
 -->
 
 
-
+<!--
 ## Optional reading list
 
 1. <a href="https://streamlit.io/">Streamlit docs</a>
 2. <a href="https://huggingface.co/docs/hub/en/spaces-sdks-streamlit">Streamlit on HuggingFace</a> with a focus on <a href="https://docs.streamlit.io/get-started/tutorials/create-a-multipage-app">Multi-page apps</a> 
 3. <a href="https://medium.com/@imanuelyosi/deploy-your-streamlit-web-app-using-hugging-face-7b9cddb11148">This blog post for a walkthrough of deploying a Streamlit space on HuggingFace</a> 
 4. <a href="https://books.google.com/books?hl=en&lr=&id=jUw7DwAAQBAJ&oi=fnd&pg=PA91&dq=scientific+visualization+misinformation&ots=Cv0QmoCdM2&sig=7xycURu8Um_C9VtHqf-aWg4qaEo#v=onepage&q=scientific%20visualization%20misinformation&f=false">Chapter 5: Dimensions of Visual Misinformation in the Emerging Media Landscape in the book "Misinformation and Mass Audiences"</a>
+-->
