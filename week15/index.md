@@ -12,9 +12,11 @@ data:
 # Work on Final Projects
 
 
+1. <a href="https://streamlit.io/">Streamlit docs</a>
+2. <a href="https://streamlit.io/cloud">Streamlit Community Cloud</a> with a focus on <a href="https://docs.streamlit.io/get-started/tutorials/create-a-multipage-app">Multi-page apps</a> 
+3. <a href="https://books.google.com/books?hl=en&lr=&id=jUw7DwAAQBAJ&oi=fnd&pg=PA91&dq=scientific+visualization+misinformation&ots=Cv0QmoCdM2&sig=7xycURu8Um_C9VtHqf-aWg4qaEo#v=onepage&q=scientific%20visualization%20misinformation&f=false">Chapter 5: Dimensions of Visual Misinformation in the Emerging Media Landscape in the book "Misinformation and Mass Audiences"</a>
 
-
-
+<!--
 ## Optional reading list
 1. VAD Ch. 8.4-8.6: Arrange Spatial Data 
 2. VAD Ch. 11.6: Manipulate View 
@@ -26,7 +28,7 @@ data:
 8. [FDV, Ch. 28: Choosing the right visualization software](https://clauswilke.com/dataviz/choosing-visualization-software.html) 
 9. [FDV, Ch. 26: Don't go 3D](https://clauswilke.com/dataviz/no-3d.html) 
 10. [FDV, Ch. 25: Avoid line drawings](https://clauswilke.com/dataviz/avoid-line-drawings.html)
-
+-->
 
 Also, here is a slightly more in-depth explanation of path/ray tracing:
 
