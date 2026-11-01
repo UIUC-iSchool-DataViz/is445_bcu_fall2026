@@ -6,14 +6,14 @@ notitle: true
 examples:
   - filename: prepMaterials
     type: iodide
-    title: Prep Streamlit App Files, Week 12
+    title: Prep Streamlit App Files, Week 11
     description: In class notebook
-    link: REPO_URL/tree/main/week12/prepMaterials
+    link: REPO_URL/tree/main/week11/prepMaterials
   - filename: InClass
     type: iodide
-    title: In class Streamlit App, Week 12
+    title: In class Streamlit App, Week 11
     description: Updating storage of Streamlit files in class
-    link: REPO_URL/tree/master/week12/inClass
+    link: REPO_URL/tree/master/week11/inClass
 data:
   - filename: mobility.csv
     type: dataLink
