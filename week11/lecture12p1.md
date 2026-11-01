@@ -191,7 +191,7 @@ Your stunning visualizations will do no one any good if they reside only on your
 
  * Raw HTML, CSS, SVG, and JavaScript
  * Content Management Systems
- * Jekyll/others
+ * Jekyll/Streamlit.io
  * GitHub Pages
  * Social Media
  
@@ -241,7 +241,7 @@ Cons:
 
 ---
 
-## Jekyll
+## Jekyll (and Streamlit.io)
 
 Pros:
  * Popular -- well documented
