@@ -44,3 +44,5 @@ scatters = alt.Chart(mobility_url).mark_point().encode(
 scatters
 
 st.text('Building in some interactivity')
+
+brush=alt.selection_interval(encodings=['x','y'])
