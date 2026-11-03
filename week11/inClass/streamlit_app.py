@@ -78,9 +78,11 @@ with tab2:
 
 
 st.subheader('Quick Vega-editor copy')
-from numpy.random import default_rng as rng
+# from numpy.random import default_rng as rng
 
-df = pd.DataFrame(rng(0).standard_normal((60, 3)), columns=["a", "b", "c"])
+# df = pd.DataFrame(rng(0).standard_normal((60, 3)), columns=["a", "b", "c"])
+
+df = pd.read_json('https://raw.githubusercontent.com/vega/vega-datasets/refs/heads/master/data/population.json')
 
 st.vega_lite_chart(
     df,
