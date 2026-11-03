@@ -130,8 +130,8 @@ st.vega_lite_chart(df2,
     }
   },
   "config": {
-    "view": {"stroke": null},
-    "axis": {"grid": false}
+    # "view": {"stroke": null},
+    # "axis": {"grid": false}
   }
 }
 )
