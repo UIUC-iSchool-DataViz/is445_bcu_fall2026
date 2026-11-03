@@ -20,3 +20,6 @@ width=200, caption='Derpy corgi')
 import numpy as np
 img_data = np.random.random((200,400))
 st.image(img_data, caption='Random data')
+
+### Here will be altair things
+st.subheader('Altair Practice')
