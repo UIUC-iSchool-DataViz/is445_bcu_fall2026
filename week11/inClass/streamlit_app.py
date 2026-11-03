@@ -70,3 +70,8 @@ chart
 st.text('trying out Tab layout')
 
 tab1, tab2 = st.tabs(['Mobility interactive', 'Scatter plot'])
+
+with tab1:
+    st.altair_chart(chart)
+with tab2:
+    st.altair_chart(scatters)
