@@ -78,7 +78,7 @@ with tab2:
 
 
 st.subheader('Quick Vega-editor copy')
-
+from numpy.random import default_rng as rng
 
 df = pd.DataFrame(rng(0).standard_normal((60, 3)), columns=["a", "b", "c"])
 
