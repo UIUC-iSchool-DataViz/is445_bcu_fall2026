@@ -68,3 +68,5 @@ chart = chart1 | chart2
 chart
 
 st.text('trying out Tab layout')
+
+tab1, tab2 = st.tabs(['Mobility interactive', 'Scatter plot'])
