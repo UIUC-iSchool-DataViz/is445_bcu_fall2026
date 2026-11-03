@@ -38,6 +38,7 @@ scatters = alt.Chart(mobility_url).mark_point().encode(
     x='Mobility:Q', 
     # y='Population:Q'
     y=alt.Y('Population:Q', scale=alt.Scale(type='log')),
-    color=alt.Color('Income:Q',scale=alt.Scale(scheme='sinebow'))
+    color=alt.Color('Income:Q',scale=alt.Scale(scheme='sinebow'), 
+    bin=alt.Bin(maxbins=5))
 )
 scatters
