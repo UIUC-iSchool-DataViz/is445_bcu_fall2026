@@ -86,19 +86,19 @@ df2 = pd.read_json('https://raw.githubusercontent.com/vega/vega-datasets/refs/he
 
 df2
 
-# st.vega_lite_chart(
-#     df,
-#     {
-#         "mark": {"type": "circle", "tooltip": True},
-#         "encoding": {
-#             "x": {"field": "a", "type": "quantitative"},
-#             "y": {"field": "b", "type": "quantitative"},
-#             "size": {"field": "c", "type": "quantitative"},
-#             "color": {"field": "c", "type": "quantitative"},
-#         },
-#     },
-#     alt="Scatter plot of a vs b sized by c",
-# )
+st.vega_lite_chart(
+    df2,
+    {
+        "mark": {"type": "circle", "tooltip": True},
+        "encoding": {
+            "x": {"field": "year", "type": "quantitative"},
+            "y": {"field": "people", "type": "quantitative"},
+            "size": {"field": "age", "type": "quantitative"},
+            "color": {"field": "sex", "type": "quantitative"},
+        },
+    },
+    alt="Scatter plot of a vs b sized by c",
+)
 
 # {
 #   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
