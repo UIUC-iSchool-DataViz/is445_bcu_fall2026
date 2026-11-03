@@ -64,3 +64,5 @@ chart2 = alt.Chart(mobility_url).mark_bar().encode(
     brush
 )
 
+chart = chart1 | chart2
+chart
