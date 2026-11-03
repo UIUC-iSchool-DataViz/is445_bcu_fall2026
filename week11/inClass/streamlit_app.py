@@ -82,21 +82,23 @@ st.subheader('Quick Vega-editor copy')
 
 # df = pd.DataFrame(rng(0).standard_normal((60, 3)), columns=["a", "b", "c"])
 
-df = pd.read_json('https://raw.githubusercontent.com/vega/vega-datasets/refs/heads/master/data/population.json')
+df2 = pd.read_json('https://raw.githubusercontent.com/vega/vega-datasets/refs/heads/master/data/population.json')
 
-st.vega_lite_chart(
-    df,
-    {
-        "mark": {"type": "circle", "tooltip": True},
-        "encoding": {
-            "x": {"field": "a", "type": "quantitative"},
-            "y": {"field": "b", "type": "quantitative"},
-            "size": {"field": "c", "type": "quantitative"},
-            "color": {"field": "c", "type": "quantitative"},
-        },
-    },
-    alt="Scatter plot of a vs b sized by c",
-)
+df2
+
+# st.vega_lite_chart(
+#     df,
+#     {
+#         "mark": {"type": "circle", "tooltip": True},
+#         "encoding": {
+#             "x": {"field": "a", "type": "quantitative"},
+#             "y": {"field": "b", "type": "quantitative"},
+#             "size": {"field": "c", "type": "quantitative"},
+#             "color": {"field": "c", "type": "quantitative"},
+#         },
+#     },
+#     alt="Scatter plot of a vs b sized by c",
+# )
 
 # {
 #   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
