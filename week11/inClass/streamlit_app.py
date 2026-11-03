@@ -53,11 +53,14 @@ chart1 = alt.Chart(mobility_url).mark_rect().encode(
     alt.Color("count()")
 ).properties(
     height=400
+).add_params(
+    brush
 )
 
 chart2 = alt.Chart(mobility_url).mark_bar().encode(
     alt.X('Mobility:Q', bin=True),
     alt.Y("count()")
+).transform_filter(
+    brush
 )
 
-chart2
