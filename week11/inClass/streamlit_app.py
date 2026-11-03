@@ -116,7 +116,7 @@ st.vega_lite_chart(df2,
   "encoding": {
     "y": {
       "field": "age",
-      "axis": null, "sort": "descending"
+      #"axis": null, "sort": "descending"
     },
     "x": {
       "aggregate": "sum", "field": "signed_people",
@@ -126,7 +126,7 @@ st.vega_lite_chart(df2,
     "color": {
       "field": "gender",
       "scale": {"range": ["#675193", "#ca8861"]},
-      "legend": {"orient": "top", "title": null}
+      #"legend": {"orient": "top", "title": null}
     }
   },
   "config": {
