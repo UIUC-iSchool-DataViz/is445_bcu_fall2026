@@ -29,4 +29,5 @@ import pandas as pd
 
 df = pd.read_csv(mobility_url)
 
+st.text('Showing the dataframe:')
 df
