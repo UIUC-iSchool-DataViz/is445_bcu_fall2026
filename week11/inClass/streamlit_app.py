@@ -51,6 +51,8 @@ chart1 = alt.Chart(mobility_url).mark_rect().encode(
     alt.X('Student_teacher_ratio:Q', bin=alt.Bin(maxbins=10)),
     alt.Y('State:O'),
     alt.Color("count()")
+).properties(
+    height=400
 )
 
 chart1
