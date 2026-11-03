@@ -24,3 +24,9 @@ st.image(img_data, caption='Random data')
 ### Here will be altair things
 st.subheader('Altair Practice')
 mobility_url ='https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_data/main/mobility.csv'
+
+import pandas as pd
+
+df = pd.read_csv(mobility_url)
+
+df
