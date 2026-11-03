@@ -46,3 +46,11 @@ scatters
 st.text('Building in some interactivity')
 
 brush=alt.selection_interval(encodings=['x','y'])
+
+chart1 = alt.Chart(mobility_url).mark_rect().encode(
+    alt.X('Student_teacher_ratio:Q', bin=alt.Bin(maxbins=10)),
+    alt.Y('State:O'),
+    alt.Color("count()")
+)
+
+chart1
