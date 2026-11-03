@@ -78,3 +78,54 @@ with tab2:
 
 
 st.subheader('Quick Vega-editor copy')
+
+
+df = pd.DataFrame(rng(0).standard_normal((60, 3)), columns=["a", "b", "c"])
+
+st.vega_lite_chart(
+    df,
+    {
+        "mark": {"type": "circle", "tooltip": True},
+        "encoding": {
+            "x": {"field": "a", "type": "quantitative"},
+            "y": {"field": "b", "type": "quantitative"},
+            "size": {"field": "c", "type": "quantitative"},
+            "color": {"field": "c", "type": "quantitative"},
+        },
+    },
+    alt="Scatter plot of a vs b sized by c",
+)
+
+# {
+#   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+#   "description": "A population pyramid for the US in 2000, created using stack. See https://vega.github.io/vega-lite/examples/concat_population_pyramid.html for a variant of this created using concat.",
+#   "data": { "url": "data/population.json"},
+#   "transform": [
+#     {"filter": "datum.year == 2000"},
+#     {"calculate": "datum.sex == 2 ? 'Female' : 'Male'", "as": "gender"},
+#     {"calculate": "datum.sex == 2 ? -datum.people : datum.people", "as": "signed_people"}
+#   ],
+#   "width": 300,
+#   "height": 200,
+#   "mark": "bar",
+#   "encoding": {
+#     "y": {
+#       "field": "age",
+#       "axis": null, "sort": "descending"
+#     },
+#     "x": {
+#       "aggregate": "sum", "field": "signed_people",
+#       "title": "population",
+#       "axis": {"format": "s"}
+#     },
+#     "color": {
+#       "field": "gender",
+#       "scale": {"range": ["#675193", "#ca8861"]},
+#       "legend": {"orient": "top", "title": null}
+#     }
+#   },
+#   "config": {
+#     "view": {"stroke": null},
+#     "axis": {"grid": false}
+#   }
+# }
