@@ -31,3 +31,9 @@ df = pd.read_csv(mobility_url)
 
 st.text('Showing the dataframe:')
 df
+
+scatters = alt.Chart(mobility_url).mark_point().encode(
+    x='Mobility:Q', 
+    y='Population:Q'
+)
+scatters
