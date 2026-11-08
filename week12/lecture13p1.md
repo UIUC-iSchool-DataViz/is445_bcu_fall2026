@@ -24,9 +24,7 @@ You will have three general components:
 1. Viz for Peers (Due DUE_FINAL_PART2 - group)
 1. Viz for Others (Due DUE_FINAL_PART3 - part group/part individual)
 
-Be aware:
- * **NO** extensions for these assignments.
- * There is a group-submission option for *parts* of the assignment.
+
 
 ---
 
@@ -42,14 +40,13 @@ Be aware:
  * **NO** extensions for these assignments.
  * There is a group-submission option for *parts* of the assignment.
 
-**Group sign up closes today!** (see People $\rightarrow$ Groups on Canvas)
 
 ---
 
-## Final Project, Part 2 (after talk)
+## Final Project, Part 1 (after talk)
 
 notes:
 
-we'll take a look at final project, part 2 after the talk
+we'll take a look at final project, part 1 after the talk
 
 reminder that you won't be able to see the assignment on PL until after groups close (an announcement will be posted after this is done), see PDF in the mean time

@@ -6,12 +6,12 @@ notitle: true
 examples:
   - filename: prepStreamlit
     type: iodide
-    title: Prep Streamlit Files, Week 13
+    title: Prep Streamlit Files, Week 12
     description: In class notebook
     link: REPO_URL/tree/main/week13/prepStreamlit
   - filename: inClassStreamlit
     type: iodide
-    title: In class Streamlit Files, Week 13
+    title: In class Streamlit Files, Week 12
     description: Updating storage of Jekyll files in class
     link: REPO_URL/tree/master/week13/inClassStreamlit
 data:
