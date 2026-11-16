@@ -105,6 +105,11 @@ TA: {{ ta.name | strip }} - `{{ ta.email | strip }}`
       | replace: "DUE_FINAL_SIGNUP", due.final_signup
       | replace: "DUE_FINAL_PART1", due.final_part1
       | replace: "DUE_FINAL_PART2", due.final_part2
+      | replace: "DUE_FINAL_PART3_1", due.final_part3_1
+      | replace: "DUE_FINAL_PART3_2", due.final_part3_2
+      | replace: "DUE_FINAL_PART3_3", due.final_part3_3
+      | replace: "DUE_FINAL_PART3_4", due.final_part3_4
+      | replace: "DUE_FINAL_PART3_5", due.final_part3_5
       | replace: "DUE_FINAL_PART3", due.final_part3 -%}
 {{ processed }}
   </script>

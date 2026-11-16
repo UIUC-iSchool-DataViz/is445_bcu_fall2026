@@ -8,7 +8,7 @@ date: 2024-12-02
 
 ## Last/This Week
 
-<img src="../week13/images/week13.png" alt="Mindmap visualization of topics covered in the course.  Latest include Scientific Visualization (started last week with the guest lecture), Jekyll and Streamlit+HuggingFace which are options for the final project.">
+<img src="../week12/images/week13.png" alt="Mindmap visualization of topics covered in the course.  Latest include Scientific Visualization (started last week with the guest lecture), Jekyll and Streamlit+HuggingFace which are options for the final project.">
 
 notes:
 we've been finishing things up with streamlit and last week had a guest lecture from AVL!
@@ -70,20 +70,22 @@ How to embed [Streamlit Spaces in other webpages](https://huggingface.co/docs/hu
 
 See [https://docs.streamlit.io/](https://docs.streamlit.io/) for full docs!
 
-How to embed [Streamlit Spaces in other webpages](https://huggingface.co/docs/hub/en/spaces-sdks-streamlit#embed-streamlit-spaces-on-other-webpages)
+How to embed [Streamlit Spaces in other webpages](https://docs.streamlit.io/deploy/streamlit-community-cloud/share-your-app/embed-your-app)
 
-Other [example HuggingFace Spaces](https://huggingface.co/spaces) you can build from.
+Examples you can fork:
+ * [GoodReads](https://goodreads.streamlit.app/?ref=streamlit-io-gallery-data-visualization)
+ * [Data Science at Swast](https://data-science-at-swast-handover-poc-handover-yfa2kz.streamlit.app/)
 
 ---
 
 ## Notes on Final, Part 3
 
 Due dates:
- 1. First draft of Part 3 (3.1) -- due Apr 29, will get feedback course participants 
- 1. Post your link in the Canvas forum to get feedback from classmates -- Apr 29 (**all group members must do this**)
- 1. Provide feedback for 3 randomly assigned classmates -- due May 6
- 1. Final chance to resubmit your Part 3 (3.4) -- May 8
- 1. Submit video about final project -- May 8
+ 1. First draft of Part 3 (3.1) -- due DUE_FINAL_PART3_1, will get feedback course participants 
+ 1. Post your link in the Canvas forum to get feedback from classmates (3.2) -- DUE_FINAL_PART3_2 (**all group members must do this**)
+ 1. Provide feedback for 3 randomly assigned classmates (3.3) -- due DUE_FINAL_PART3_3
+ 1. Final chance to resubmit your Part 3 (3.4) -- DUE_FINAL_PART3_4
+ 1. Submit video about final project (3.5) -- DUE_FINAL_PART3_5
  
 **Please be aware these are hard deadlines -- no extensions or late submissions available**
  
@@ -95,6 +97,16 @@ because we have to get grades in by a certain time, these due dates are hard one
 your "first" part 3 submission CAN be a work in progress -- you can outline what you want to do, but the more you have done, the better we can give you feedback and the more there is for your other feedback-giving classmates to work with
 
 be aware that the due dates have shifted a little bit -- the first draft of your final part 3 has moved up, but the final submission has moved back -- this is so that you'll have plenty of time to get feedback and give feedback to others.
+
+---
+
+## Final Project, Part 2
+
+Let's take a look!
+
+notes:
+
+* go over final project part 2!
 
 
 
@@ -109,16 +121,6 @@ notes:
 
 * go over -- note it is close in due date to final project, part 2!
 * ~~should we push this back a few days (maybe that friday?)~~
-
----
-
-## Final Project, Part 2
-
-Check in on questions!
-
-notes:
-
-* go over final project part 2!
 
 ---
 
