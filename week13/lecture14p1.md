@@ -1,5 +1,5 @@
 ---
-title: Lecture 14.1 - Announcements, More Streamlit, Final Project Info
+title: Lecture 13.1 - Announcements, More Streamlit, Final Project Info
 layout: lecture
 description: >-
  A few announcements before doing some final things with Streamlit.
