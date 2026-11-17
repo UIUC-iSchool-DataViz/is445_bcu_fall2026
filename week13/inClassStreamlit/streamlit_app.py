@@ -5,7 +5,9 @@ import streamlit as st
 page = st.navigation(
   [
     st.Page("app_pages/hello.py", title="Hello", icon="👋"), 
-    st.Page("app_pages/plots.py", title="Plots", icon=":material/show_chart:")
+    st.Page("app_pages/plots.py", title="Plots", icon=":material/show_chart:"),
+    st.Page("app_pages/data_explore.py", title="Data", icon=":material/show_chart:")
+
   ]
 )
 page.run()
